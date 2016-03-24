@@ -11,18 +11,16 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="wwc-stylee.css">
-    <!-- branding bar css -->
-    <link rel="stylesheet" type="text/css" href="//d3d1m61yehgiwz.cloudfront.net/brandingbar/0.4/css/brandingbar.min.css.gz">
-    <link rel="stylesheet" type="text/css" href="//d3d1m61yehgiwz.cloudfront.net/sf-icons/0.2/css/sf-icons.min.css.gz">
-  <!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <link rel="stylesheet" type="text/css" href="wwc-stylee.css" />
+    <link rel="stylesheet" type="text/css" href="//d3d1m61yehgiwz.cloudfront.net/brandingbar/0.4/css/brandingbar.min.css.gz" />
+    <link rel="stylesheet" type="text/css" href="//d3d1m61yehgiwz.cloudfront.net/sf-icons/0.2/css/sf-icons.min.css.gz" />
+    <!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css" />
   </head>
   <body>
   	<div class="content">
-  	  <header>
-        <div class="branding-bar" data-bb-brandingbar="true" data-bb-property-id="sunlightlabs-awesome"></div>
-      </header>
+  	  <header><div class="branding-bar" data-bb-brandingbar="true" data-bb-property-id="sunlightlabs-awesome"></div></header>
       <aside>
         <h1><a id="logo" href="https://sunlightfoundation.com">Sunlight Foundation</a></h1>
         <nav class="nav">
@@ -114,6 +112,7 @@
   	  	</section>
   	  	<section id="wwc-map">
   	  	  <h2><a id="" href="#nogo"></a></h2>
+          <div id="map" style="width: 600px; height: 400px"></div>
   	  	</section>
   	  	<section>
   	  	  <h2><a id="about" href="#nogo">About</a></h2>
@@ -150,5 +149,8 @@
     ga('create','UA-XXXXX-X','auto');ga('send','pageview');
   </script> -->
   </body>
+
+    <script src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js"></script>
+    <script src="wwc-leaflet.js"></script>
 <script async type="text/javascript" src="https://sunlight-cdn.s3.amazonaws.com/brandingbar/0.4/js/brandingbar.min.js.gz"></script>
 </html>
