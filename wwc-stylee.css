@@ -5,6 +5,9 @@ body{
 }
 .content{
 	background-color:#000;
+	/** put this into place prior to going live
+	background-color:#e7ede4;
+	**/
 
 }
 ul{list-style-type:none;}
@@ -22,16 +25,40 @@ display:block;
 text-indent:-9999px;
 height:200px;
 }
-.nav a{color:#fff; 
+.nav a{
+	color:#fff; 
 	text-transform:uppercase;
 	text-indent:1em;
 	line-height:2.5;
 	display:block;
+	outline:1px dotted #fff;
+	position:relative;
 }
-.nav a:hover{background-color:#181637; color:#a44238;
-/** content:"" for arrow protrusion **/
+.nav a:before,.nav a::before,.nav a:after,.nav a::after{
+	left:100%; 
+	z-index:100;
+	top:0;
+	position:absolute;
+	border:solid transparent;
+	content:"";
+	height:0;
+	width:0;
+	pointer-events:none;
+}
+.nav a:hover{background-color:#181637; color:#a44238}
+.nav a:hover:before,.nav a:hover::before{
+	border-left-color:#181637;
+	border-width:20px;
+}
+/**
+.nav a:hover:after,.nav a:hover::after{
+border-color:rgba(136, 183, 213, 0);
+	border-left-color: #88b7d5;
+	border-width: 30px;
+	margin-top: -30px;
+}
+**/
 
-}
 
 .maincontent{
 	width:85%;
