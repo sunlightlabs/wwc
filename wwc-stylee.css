@@ -1,0 +1,79 @@
+*{margin:0; padding:0; border:none;}
+html{}
+body{
+	color:#fff; 
+}
+.content{
+	background-color:#000;
+
+}
+ul{list-style-type:none;}
+a{text-decoration:none; color:#fff;}
+aside{
+	position:fixed;
+	width:15%;
+	height:100%; 
+	background-color:#25305d;
+
+}
+/** logo desktop dimensions width:106px; height:121px;  **/
+#logo{background:url("i/wwc-icon.png") 50% 50% no-repeat; 
+display:block; 
+text-indent:-9999px;
+height:200px;
+}
+.nav a{color:#fff; 
+	text-transform:uppercase;
+	text-indent:1em;
+	line-height:2.5;
+	display:block;
+}
+.nav a:hover{background-color:#181637; color:#a44238;
+/** content:"" for arrow protrusion **/
+
+}
+
+.maincontent{
+	width:85%;
+	margin-left:15%;
+	background-color:#6cc8c5;
+
+}
+
+header{background-color:#e7ede4; height:45px;}
+footer{}
+/** see
+border #df5530
+text #df5530
+
+**/
+
+
+p{}
+section{
+	border-bottom:2px solid #fff;
+
+}
+#wwc-first{text-align:center;
+background:url("i/bg-section-first.png") 50% 0 no-repeat;
+padding-top:14em;
+}
+#wwc-first h1,#wwc-first p,#wwc-first a{}
+#wwc-first p{}
+#see-great-work{
+	margin:4em auto;
+	position:relative; 
+	display:block; 
+	color:#df5530; 
+	border:2px solid #df5530; 
+	line-height:1.5;
+	width:40%;
+	text-transform:uppercase;
+}
+#see-great-work:before,#see-great-work::before{content:""; position:absolute; z-index:100;}
+#wwc-tweets{background-color:#25305d;}
+h2{text-align:left; text-indent:1em; text-transform:uppercase;}
+h3{position:relative;}
+h3:before,h3::before{position:absolute; content:""; z-index:100; /** square border color -> color:#df5530;  **/   }
+.ref-doc-link,.wwc-blogposts-read-more{text-transform:uppercase; color:#df5530;}
+/** both will need :before + content:""; for adding arrow icons **/ß
