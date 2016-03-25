@@ -1,17 +1,25 @@
 *{margin:0; padding:0; border:none;}
 html{}
 body{
-	color:#fff; 
+	color:#fff;
 }
 .content{
+	font-family: "futura-pt", sans-serif;
 	background-color:#000;
 	/** put this into place prior to going live
 	background-color:#e7ede4;
 	**/
 
 }
-ul{list-style-type:none;}
-a{text-decoration:none; color:#fff;}
+.tk-futura-pt{}
+h1,h2,h3,h4{}
+ul{
+	list-style-type:none;
+}
+a{
+	text-decoration:none;
+	color:#fff;
+}
 aside{
 	position:fixed;
 	width:15%;
@@ -20,13 +28,17 @@ aside{
 
 }
 /** logo desktop dimensions width:106px; height:121px;  **/
-#logo{background:url("i/wwc-icon.png") 50% 50% no-repeat; 
-display:block; 
-text-indent:-9999px;
-height:200px;
+#logo{
+	background:url("i/wwc-icon.png") 50% 50% no-repeat; 
+	display:block; 
+	text-indent:-9999px;
+	height:200px;
 }
 .nav a{
-	color:#fff; 
+	font-weight:300;
+	letter-spacing:1px;
+	font-family: "futura-pt-condensed", sans-serif;
+	color:#fff;
 	text-transform:uppercase;
 	text-indent:1em;
 	line-height:2.5;
@@ -34,7 +46,7 @@ height:200px;
 	outline:1px dotted #fff;
 	position:relative;
 }
-.nav a:before,.nav a::before,.nav a:after,.nav a::after{
+.nav a:before{
 	left:100%; 
 	z-index:100;
 	top:0;
@@ -45,21 +57,14 @@ height:200px;
 	width:0;
 	pointer-events:none;
 }
-.nav a:hover{background-color:#181637; color:#a44238}
-.nav a:hover:before,.nav a:hover::before{
+.nav a:hover{
+	background-color:#181637; 
+	color:#a44238;
+}
+.nav a:hover:before{
 	border-left-color:#181637;
 	border-width:20px;
 }
-/**
-.nav a:hover:after,.nav a:hover::after{
-border-color:rgba(136, 183, 213, 0);
-	border-left-color: #88b7d5;
-	border-width: 30px;
-	margin-top: -30px;
-}
-**/
-
-
 .maincontent{
 	width:85%;
 	margin-left:15%;
@@ -67,7 +72,10 @@ border-color:rgba(136, 183, 213, 0);
 
 }
 
-header{background-color:#e7ede4; height:45px;}
+header{
+	background-color:#e7ede4; 
+	height:45px;
+}
 footer{}
 /** see
 border #df5530
@@ -77,30 +85,112 @@ text #df5530
 
 
 p{}
-section{
-	border-bottom:2px solid #fff;
-
+/** gutters **/
+section,footer{margin-left:2em; margin-right:4em; /** max-width:1500px; **/}
+section{padding-left:100px; }
+section.embeded-content{
+	background-color:#ffcb06;
 }
-#wwc-first{text-align:center;
-background:url("i/bg-section-first.png") 50% 0 no-repeat;
-padding-top:14em;
+section{
+	padding-bottom:4em;
+	border-bottom:4px solid #fff;
+}
+#wwc-first{
+	text-align:center;
+	background:url("i/bg-section-first.png") 50% 0 no-repeat;
+	padding-top:14em;
 }
 #wwc-first h1,#wwc-first p,#wwc-first a{}
 #wwc-first p{}
 #see-great-work{
+	font-weight:800;
 	margin:4em auto;
 	position:relative; 
 	display:block; 
 	color:#df5530; 
-	border:2px solid #df5530; 
-	line-height:1.5;
-	width:40%;
+	border:4px solid #df5530; 
+	line-height:2.5;
+	width:30%;
 	text-transform:uppercase;
 }
-#see-great-work:before,#see-great-work::before{content:""; position:absolute; z-index:100;}
-#wwc-tweets{background-color:#25305d;}
-h2{text-align:left; text-indent:1em; text-transform:uppercase;}
-h3{position:relative;}
-h3:before,h3::before{position:absolute; content:""; z-index:100; /** square border color -> color:#df5530;  **/   }
-.ref-doc-link,.wwc-blogposts-read-more{text-transform:uppercase; color:#df5530;}
-/** both will need :before + content:""; for adding arrow icons **/ß
+#see-great-work:before{
+	content:"";
+	position:absolute;
+	z-index:100;
+	left:43%;
+	top:100%;
+	height:0; 
+	width:0;
+	border:30px solid rgba(223, 85, 48, 0);
+	border-top-color: #df5530;
+}
+#see-great-work:hover{
+	color:#402820; 
+	border-color:#402820;
+}
+#see-great-work:hover:before{
+	border-top-color:#402820;
+}
+.content-list{
+	padding-left:80px;
+	position:relative;
+}
+.content-list:before{
+	position:absolute;
+	content:"";
+	border:4px solid #df5530;
+	height:50px;
+	width:50px;
+	top:-5px;
+	left:0;
+	/** df5530 **/
+	z-index:100; /** square border color -> color:#df5530;  **/   
+}
+
+#wwc-tweets{
+	background-color:#25305d;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: "futura-pt-condensed", sans-serif;
+}
+h2{
+	margin-top:1.5em; 
+	font-size:2.75em;
+	text-align:left;
+	height:100px;
+	text-transform:uppercase;
+}
+h3{
+	margin-bottom:.5em;
+	font-weight:800; 
+	font-size:2.5em; 
+	letter-spacing:2px;
+	position:relative;
+}
+p{
+	font-size:2.2em; 
+	font-weight:300;
+	margin-bottom:.5em;
+}
+.ref-doc-link,.wwc-blogposts-read-more{
+	text-transform:uppercase;
+	color:#df5530;
+}
+.ref-doc-link{
+	position:relative;
+	margin-top:1.5em;
+	font-weight:800;
+}
+.ref-doc-link:before{
+	position:absolute;
+	content:"→";
+	height:21px;
+	width:21px;
+	z-index:100;
+	right:-15%;
+	top:0;
+	border:none;
+	border-radius:100%;
+	background-color:#df5530;
+}
+/** both will need :before + content:""; for adding arrow icons **/
