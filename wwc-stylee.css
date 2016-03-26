@@ -203,3 +203,16 @@ p{
 	background-color:#df5530;
 }
 /** both will need :before + content:""; for adding arrow icons **/
+
+
+
+
+
+/** javascript hooks **/
+.trigger{padding: 0 0 0 50px; margin: 0 0 5px 0;
+  /** background:url("http://bowdenweb.com/krs1/javascript/jquery/toggle/i/h2_trigger_a.gif") no-repeat;  **/
+  /** background-image:url("plus-alt-32.png"); **/
+
+
+}
+.trigger-active{ /** background-image:url("x-alt-32.png")  **/ background-color:#000; color:#c0c0c0; border:12px solid #0f0;}
