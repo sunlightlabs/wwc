@@ -88,8 +88,17 @@ p{}
 /** gutters **/
 section,footer{margin-left:2em; margin-right:4em; /** max-width:1500px; **/}
 section{padding-left:100px; }
-section.embeded-content{
+.embedded-content{
 	background-color:#ffcb06;
+	margin:10% auto;
+	height:500px;
+	width:800px;
+}
+iframe{
+	width:90%;
+	height:80%;
+	border:1px solid #000;
+	margin:auto;
 }
 section{
 	padding-bottom:4em;
