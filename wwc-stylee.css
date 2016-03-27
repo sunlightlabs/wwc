@@ -215,12 +215,36 @@ header{
 	background-color:#e7ede4; 
 	height:45px;
 }
-footer{}
+footer{text-align:center;}
+
+.wwc-logo-headliner{
+	outline:1px dotted #000;
+	/** width for containment....may not be needed... **/
+	max-width:700px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.wwc-logo{
+	display:block;
+	height:119px;
+}
+#wwc-logo-wwc{float:left;}
+#wwc-logo-sf{
+	float:right; 
+/** line-height for vertical alignment son **/
+	line-height:150px;}
+
+footer li a{color:#df5530; font-size:2em;}
 /** see
 border #df5530
 text #df5530
 
 **/
+
+
+
+/** utility classes **/
+.clearboth{clear:both; float:none;}
 
 
 p{}
