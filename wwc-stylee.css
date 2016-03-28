@@ -144,14 +144,34 @@ body{
 }
 .content{
 	font-family: "futura-pt", sans-serif;
-	background-color:#000;
+	background-color:#25305d;
+	/** background-color:#000; **/
 	/** put this into place prior to going live
 	background-color:#e7ede4;
 	**/
-
 }
-.tk-futura-pt{}
-h1,h2,h3,h4{}
+h1,h2,h3,h4,h5,h6{
+	font-family: "futura-pt-condensed", sans-serif;
+}
+h2{
+	margin-top:1.5em; 
+	font-size:2.75em;
+	text-align:left;
+	height:100px;
+	text-transform:uppercase;
+}
+h3{
+	margin-bottom:.5em;
+	font-weight:800; 
+	font-size:2.5em; 
+	letter-spacing:2px;
+	position:relative;
+}
+p{
+	font-size:2.2em; 
+	font-weight:300;
+	margin-bottom:.5em;
+}
 ul{
 	list-style-type:none;
 }
@@ -165,6 +185,29 @@ aside{
 	height:100%; 
 	background-color:#25305d;
 
+}
+header{
+	background-color:#e7ede4; 
+	height:45px;
+}
+footer{text-align:center;}
+
+
+
+/** gutters **/
+section,footer{margin-left:2em; margin-right:4em; /** max-width:1500px; **/}
+section{padding-left:100px; }
+iframe{
+	width:90%;
+	height:80%;
+	border:1px solid #000;
+	margin:auto;
+}
+section{
+	/** background:url("i/wwc-icon-filler-64x72.png") 0 0 no-repeat; **/
+	background:url("i/wwc-icon-filler-68x80.png") 0 0 no-repeat; 
+	padding-bottom:4em;
+	border-bottom:4px solid #fff;
 }
 /** logo desktop dimensions width:106px; height:121px;  **/
 #logo{
@@ -182,7 +225,6 @@ aside{
 	text-indent:1em;
 	line-height:2.5;
 	display:block;
-	outline:1px dotted #fff;
 	position:relative;
 }
 .nav a:before{
@@ -210,13 +252,6 @@ aside{
 	background-color:#6cc8c5;
 
 }
-
-header{
-	background-color:#e7ede4; 
-	height:45px;
-}
-footer{text-align:center;}
-
 .wwc-logo-headliner{
 	outline:1px dotted #000;
 	/** width for containment....may not be needed... **/
@@ -247,25 +282,11 @@ text #df5530
 .clearboth{clear:both; float:none;}
 
 
-p{}
-/** gutters **/
-section,footer{margin-left:2em; margin-right:4em; /** max-width:1500px; **/}
-section{padding-left:100px; }
 .embedded-content{
 	background-color:#ffcb06;
 	margin:10% auto;
 	height:500px;
 	width:800px;
-}
-iframe{
-	width:90%;
-	height:80%;
-	border:1px solid #000;
-	margin:auto;
-}
-section{
-	padding-bottom:4em;
-	border-bottom:4px solid #fff;
 }
 #wwc-first{
 	text-align:center;
@@ -311,9 +332,9 @@ section{
 	position:absolute;
 	content:"";
 	border:4px solid #df5530;
-	height:50px;
-	width:50px;
-	top:-5px;
+	height:40px;
+	width:40px;
+	top:-4px;
 	left:0;
 	/** df5530 **/
 	z-index:100; /** square border color -> color:#df5530;  **/   
@@ -321,28 +342,6 @@ section{
 
 #wwc-tweets{
 	background-color:#25305d;
-}
-h1,h2,h3,h4,h5,h6{
-	font-family: "futura-pt-condensed", sans-serif;
-}
-h2{
-	margin-top:1.5em; 
-	font-size:2.75em;
-	text-align:left;
-	height:100px;
-	text-transform:uppercase;
-}
-h3{
-	margin-bottom:.5em;
-	font-weight:800; 
-	font-size:2.5em; 
-	letter-spacing:2px;
-	position:relative;
-}
-p{
-	font-size:2.2em; 
-	font-weight:300;
-	margin-bottom:.5em;
 }
 .ref-doc-link,.wwc-blogposts-read-more{
 	text-transform:uppercase;
