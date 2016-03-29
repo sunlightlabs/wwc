@@ -1,7 +1,7 @@
 jQuery(function() {
 
     jQuery.getFeed({
-        url: 'http://sunlightfoundation.com/blog/rss/',
+        url: 'http://sunlightfoundation.com/feeds/blog/term/what-works-cities/',
         success: function(feed) {
         
             jQuery('#rss-feed-viewer').append('<h2>'
