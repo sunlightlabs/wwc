@@ -4,35 +4,19 @@ jQuery(function() {
         url: 'http://sunlightfoundation.com/feeds/blog/term/what-works-cities/',
         success: function(feed) {
         
-            jQuery('#rss-feed-viewer').append('<h2>'
-            + '<a href="'
-            + feed.link
-            + '">'
-            + feed.title
-            + '</a>'
-            + '</h2>');
-            
             var html = '';
             
-            for(var i = 0; i < feed.items.length && i < 5; i++) {
+            for(var i = 0; i < feed.items.length && i < 3; i++) {
             
                 var item = feed.items[i];
                 
-                html += '<h3>'
+                html += '<h3 class="wwc-blog-post-title">'
                 + '<a href="'
                 + item.link
                 + '">'
                 + item.title
-                + '</a>'
+                + ' <span class="wwc-blogposts-read-more">Read</span></a>'
                 + '</h3>';
-                
-                html += '<div class="updated">'
-                + item.updated
-                + '</div>';
-                
-                html += '<div>'
-                + item.description
-                + '</div>';
             }
             
             jQuery('#rss-feed-viewer').append(html);

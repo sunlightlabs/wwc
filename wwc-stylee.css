@@ -157,6 +157,7 @@ h1,h2,h3,h4,h5,h6{
 h2{
 	margin-top:1.5em; 
 	font-size:2.75em;
+	line-height:100px;
 	text-align:left;
 	height:100px;
 	text-transform:uppercase;
@@ -281,6 +282,8 @@ text #df5530
 
 /** utility classes **/
 .clearboth{clear:both; float:none;}
+.clearleft{clear:left; float:none;}
+.clearright{clear:right; float:none;}
 
 
 .embedded-content{
@@ -371,8 +374,11 @@ footer em{font-size:1.5em}
 footer{padding-bottom:2em;}
 footer li{margin-top:1em; margin-bottom:1em; font-size:1em;}
 
-
-
+#wwc-blogposts .section-box{}
+#wwc-blogposts .section-box-01{background-color:#fff; padding:25px}
+#wwc-blogposts h2{background-color:#25305d; text-indent:1em;}
+#wwc-blogposts-all{font-size:1em; float:right; display:block; margin-right:1em;}
+#wwc-blogposts h3{}
 /** javascript hooks **/
 .trigger{padding: 0 0 0 50px; margin: 0 0 5px 0;
   /** background:url("http://bowdenweb.com/krs1/javascript/jquery/toggle/i/h2_trigger_a.gif") no-repeat;  **/
@@ -381,3 +387,16 @@ footer li{margin-top:1em; margin-bottom:1em; font-size:1em;}
 
 }
 .trigger-active{ /** background-image:url("x-alt-32.png")  **/ background-color:#000; color:#c0c0c0; border:12px solid #0f0;}
+
+/** feed display **/
+span.read-more{}
+#rss-feed-viewer{height:100px;} /** height for bg color with floating elements **/
+h3.wwc-blog-post-title{float:left; width:33%; font-size:1.25em;}
+h3.wwc-blog-post-title a{color:#000; font-weight:300;}
+.wwc-blogposts-read-more{font-weight:700; position:relative;}
+.wwc-blogposts-read-more:before{
+	content:"";
+	position:absolute;
+
+}
+
