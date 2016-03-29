@@ -138,6 +138,7 @@ text-transform:capitalize;
 
 
 *{margin:0; padding:0; border:none;}
+
 html{}
 body{
 	color:#fff;
@@ -222,7 +223,7 @@ section{
 	font-family: "futura-pt-condensed", sans-serif;
 	color:#fff;
 	text-transform:uppercase;
-	text-indent:1em;
+	text-indent:1.5em;
 	line-height:2.5;
 	display:block;
 	position:relative;
@@ -365,8 +366,10 @@ text #df5530
 	background-color:#df5530;
 }
 /** both will need :before + content:""; for adding arrow icons **/
-
-
+footer li a{margin-bottom:30px;}
+footer em{font-size:1.5em}
+footer{padding-bottom:2em;}
+footer li{margin-top:1em; margin-bottom:1em; font-size:1em;}
 
 
 
