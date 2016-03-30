@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery.getJSON demo</title>
+  <style>
+  img {
+    height: 100px;
+    float: left;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<script>
+jsonURL = "https://raw.githubusercontent.com/sunlightpolicy/opendata/master/USlocalpolicylocations.geoJSON";
+$.getJSON(jsonURL, function(data) {
+  var locations = [];
+  $.each(data, function(key,val){
+    locations.push("<li><b>Key: " + key + "</b> : <em>Value: " + val + "</em></li>");
+  
+  });
+  $("<ul/>", {
+    html: locations.join( "" )
+    }).appendTo("body");
+});
+</script>
+ 
+</body>
+</html>
