@@ -3,27 +3,38 @@
 <head>
   <meta charset="utf-8">
   <title>jQuery.getJSON demo</title>
-  <style>
-  img {
-    height: 100px;
-    float: left;
-  }
-  </style>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
-
 <script>
-jsonURL = "https://raw.githubusercontent.com/sunlightpolicy/opendata/master/USlocalpolicylocations.geoJSON";
-$.getJSON(jsonURL, function(data) {
-  var locations = [];
-  $.each(data, function(key,val){
-    locations.push("<li><b>Key: " + key + "</b> : <em>Value: " + val + "</em></li>");
-  
-  });
-  $("<ul/>", {
-    html: locations.join( "" )
+$(document).ready(function(){
+  var jsonURL = "https://raw.githubusercontent.com/sunlightpolicy/opendata/master/USlocalpolicylocations.geoJSON";
+  $.getJSON(jsonURL, function(data) {
+    var locations = [];
+    $.each(data['features'], function(key, val) {
+      if (val['properties'].hasOwnProperty('City') && val['properties']['City'] != '') {
+        locations.push(val);
+      }
+    });
+    var geolocations = [];
+    $.each(data['geometry'], function(key, val){
+      
+
+
+    })
+
+    $("<ul/>", {
+      html: locations.map(function(obj, index) {
+        return "<li><b>Key: " + index + "</b> : <em>Value: " + obj['properties']['City'] + "</em> <b>Date</b>: " + obj['properties']['Date'] + " <em>Legal Means</em>: " + obj['properties']['Legal Means'] + " <a href=\"" + obj['properties']['Policy URL'] + "\">Policy Url <code>" + obj['properties']['Policy URL'] + "</code></a></li>"}).join( "" )
+      }).appendTo("body");
+    $("<ul/>", {
+      html: geolocations.map(function(obj, index) {
+        return "<li><b>Key: " + index + "</b> : <em>Type: " + obj['geometry']['type'] + "</em></li>"}).join( "" )
     }).appendTo("body");
+    console.log(geometry);
+
+
+  });
 });
 </script>
  
