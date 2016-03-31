@@ -157,9 +157,9 @@ h1,h2,h3,h4,h5,h6{
 h2{
 	margin-top:1.5em; 
 	font-size:2.75em;
-	line-height:100px;
+	line-height:80px;
 	text-align:left;
-	height:100px;
+	height:80px;
 	text-transform:uppercase;
 }
 h3{
@@ -211,14 +211,13 @@ section{
 	background-repeat:no-repeat;
 	background-position:0 0;
 }
-section#wwc-define-goals{background-image:url("i/icons/icon-00a.png");}
-#wwc-engage-stakeholders{background-image:url("i/icons/icon-01a.png");}
+section#wwc-blogposts,section#wwc-promote-work,section#wwc-about,section#wwc-map{border-bottom:none;}
+#wwc-define-goals{background-image:url("i/icons/icon-05a.png");}
+#wwc-engage-stakeholders{background-image:url("i/icons/icon-03a.png");}
 #wwc-craft-policy{background-image:url("i/icons/icon-02a.png");}
-#wwc-implement{background-image:url("i/icons/icon-03a.png");}
-#wwc-promote-work{background-image:url("i/icons/icon-04a.png");}
-#wwc-open-data-cities{background-image:url("i/icons/icon-05a.png");}
-
-/** logo desktop dimensions width:106px; height:121px;  **/
+#wwc-implement{background-image:url("i/icons/icon-00a.png");}
+#wwc-promote-work{background-image:url("i/icons/icon-06a.png");}
+#wwc-about{background-image:url("i/icons/icon-04a.png");}
 #logo{
 	background:url("i/wwc-icon.png") 50% 50% no-repeat; 
 	display:block; 
@@ -262,7 +261,6 @@ section#wwc-define-goals{background-image:url("i/icons/icon-00a.png");}
 
 }
 .wwc-logo-headliner{
-	outline:1px dotted #000;
 	/** width for containment....may not be needed... **/
 	max-width:700px;
 	margin-left:auto;
@@ -304,8 +302,6 @@ text #df5530
 	background:url("i/bg-section-first.png") 50% 0 no-repeat;
 	padding-top:14em;
 }
-#wwc-first h1,#wwc-first p,#wwc-first a{}
-#wwc-first p{}
 #see-great-work{
 	font-weight:800;
 	margin:4em auto;
@@ -350,7 +346,17 @@ text #df5530
 	/** df5530 **/
 	z-index:100; /** square border color -> color:#df5530;  **/   
 }
-
+.li-header{margin-top:30px; position:relative;}
+.li-header:before{
+	position:absolute;
+	content:"";
+	border:4px solid #df5530;
+	height:40px;
+	width:40px;
+	top:-4px;
+	left:-80px;
+	z-index:100;
+}
 #wwc-tweets{
 	background-color:#25305d;
 }
@@ -363,6 +369,7 @@ text #df5530
 	margin-top:1.5em;
 	font-weight:800;
 }
+/**
 .ref-doc-link:before{
 	position:absolute;
 	content:"→";
@@ -375,6 +382,7 @@ text #df5530
 	border-radius:100%;
 	background-color:#df5530;
 }
+**/
 /** both will need :before + content:""; for adding arrow icons **/
 footer li a{margin-bottom:30px;}
 footer em{font-size:1.5em}
@@ -384,7 +392,9 @@ footer li{margin-top:1em; margin-bottom:1em; font-size:1em;}
 #wwc-blogposts .section-box{}
 #wwc-blogposts .section-box-01{background-color:#fff; padding:25px}
 #wwc-blogposts h2{background-color:#25305d; text-indent:1em;}
-#wwc-blogposts-all{font-size:1em; float:right; display:block; margin-right:1em;}
+#wwc-blogposts-all{
+	margin-top:-68px; margin-right:15px; font-size:30px; float:right; display:block; border:3px solid #df5530; text-indent:0; text-align:center; color:#df5530; line-height:30px;
+padding:10px;}
 #wwc-blogposts h3{}
 /** javascript hooks **/
 .trigger{padding: 0 0 0 50px; margin: 0 0 5px 0;
@@ -408,3 +418,71 @@ h3.wwc-blog-post-title a{color:#000; font-weight:300;}
 }
 
 .leaflet-popup-content{color:#000;}
+
+/** css animations/transformations **/
+/** :target animation of logo **/
+@-webkit-keyframes target {
+  from { background:#ffffff; }
+  50% { background:#ffffd3; }
+  to { background:#ffffff; }
+}
+#logo:target{
+border:10px solid #9f8b5e;    
+-webkit-animation:target .5s linear; -moz-animation:target .5s linear; -animation:target .5s linear; 
+-webkit-animation-duration:.5s; -moz-animation-duration:.5s; -animation-duration:.5s;
+-webkit-animation-iteration-count:1; -moz-animation-iteration-count:1; -animation-iteration-count:1;
+-webkit-animation-direction:linear; -moz-animation-direction:linear; -animation-direction:linear;
+}
+
+
+
+
+section h2{
+-webkit-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    -ms-transition: color 0.5s ease;
+    transition: color 0.5s ease;
+}
+section h2{
+  /**
+    font-size: 50px;
+    text-decoration: underline;
+    color: #37aee4;
+ **/ }
+
+@media screen and (max-width: 480px) {
+	section{padding-left:0; margin-left:0; margin-right:0; background-position:10px 0;}
+	aside{position:relative; width:100%;}
+	aside a{text-align:center;}
+	.maincontent{width:100%; margin-left:0;}
+	h1{font-size:30px;}
+	p{font-size:22px; padding-left:20px; padding-right:20px;}
+	#see-great-work{width:90%; font-size:15px;}
+	h2{margin-left:80px; font-size:25px;}
+	.content-list{position:relative; padding-top:20px;}
+	.content-list:before{height:30px; width:30px;
+	top:20px;
+	left:22px;
+	/** df5530 **/
+	z-index:100; /** square border color -> color:#df5530;  **/   
+}
+.li-header:before{top:0; left:-55px; height:30px; width:30px;}
+h3{font-size:25px;}
+section p{padding:0; }
+.trigger{padding-left:0;}
+#wwc-blogposts h2{margin-left:0; text-indent:0;}
+#wwc-blogposts{position:relative;}
+#wwc-blogposts-all{margin:0; position:absolute; bottom:20px; left:30%;}
+.section-box-01{height:200px;}
+.section-box-01 h3{float:none; clear:left; width:100%; margin-left:10px; margin-right:10px;}
+#wwc-blogposts{background-color:#fff;}
+#wwc-about .content-list:before{border-color:transparent;}
+#wwc-logo-wwc{float:none; height:106px;}
+#wwc-logo-sf{height:106px;
+	float:none; 
+/** line-height for vertical alignment son **/
+	line-height:150px;}
+#wwc-about{padding-bottom:0;}
+footer li a{margin-bottom:10px; font-size:20px;}
+}
