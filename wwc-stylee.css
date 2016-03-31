@@ -206,11 +206,18 @@ iframe{
 	margin:auto;
 }
 section{
-	/** background:url("i/wwc-icon-filler-64x72.png") 0 0 no-repeat; **/
-	background:url("i/wwc-icon-filler-68x80.png") 0 0 no-repeat; 
 	padding-bottom:4em;
 	border-bottom:4px solid #fff;
+	background-repeat:no-repeat;
+	background-position:0 0;
 }
+section#wwc-define-goals{background-image:url("i/icons/icon-00a.png");}
+#wwc-engage-stakeholders{background-image:url("i/icons/icon-01a.png");}
+#wwc-craft-policy{background-image:url("i/icons/icon-02a.png");}
+#wwc-implement{background-image:url("i/icons/icon-03a.png");}
+#wwc-promote-work{background-image:url("i/icons/icon-04a.png");}
+#wwc-open-data-cities{background-image:url("i/icons/icon-05a.png");}
+
 /** logo desktop dimensions width:106px; height:121px;  **/
 #logo{
 	background:url("i/wwc-icon.png") 50% 50% no-repeat; 
