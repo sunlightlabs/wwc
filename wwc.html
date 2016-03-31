@@ -171,7 +171,7 @@ section h2{
   	  	</section>
   	  	<section id="wwc-map">
   	  	  <h2><a id="" href="#nogo"></a></h2>
-          <div id="map" style="width: 600px; height: 400px"></div>
+          <div id="mapid" style="width: 600px; height: 400px"></div>
   	  	</section>
   	  	<section>
   	  	  <h2><a id="about" href="#nogo">About</a></h2>
@@ -209,12 +209,34 @@ section h2{
     ga('create','UA-XXXXX-X','auto');ga('send','pageview');
   </script> -->
   </body>
-
+<script src="jquery-v1.8.3.js"></script>
 <script src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js"></script>
-<script src="wwc-leaflet.js"></script>
+<script>
+$(document).ready(function(){
+  var jsonURL = "https://raw.githubusercontent.com/sunlightpolicy/opendata/master/USlocalpolicylocations.geoJSON";
+  $.getJSON(jsonURL, function(data) {
+    var locations = [];
+    $.each(data['features'], function(key, val) {
+      if (val['properties'].hasOwnProperty('City') && val['properties']['City'] != '') {
+        locations.push(val);
+      }
+    });
+    var map = L.map('mapid').setView([40, -100], 3);
+    var mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+    L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; ' + mapLink + ' Contributors',
+        maxZoom: 18
+    }).addTo(map);
+
+    for (var i = 0; i < locations.length; i++) {
+      var coords = locations[i]['geometry']['coordinates'];
+       var marker = L.marker([coords[1], coords[0]]).bindPopup('<a href="' + locations[i]['properties']['Policy URL'] + '">Policy Link</a>').addTo(map);
+    }
+  });
+});
+</script>
     <!-- https://github.com/sunlightpolicy/opendata/blob/master/USlocalpolicylocations.geoJSON -->
 <script async type="text/javascript" src="https://sunlight-cdn.s3.amazonaws.com/brandingbar/0.4/js/brandingbar.min.js.gz"></script>
-<script src="jquery-v1.8.3.js"></script>
 <script src="toggle.jquery.js"></script>
 <script src="jquery.jfeed.pack.js"></script>
 <script src="display-rss.jquery.js"></script>
