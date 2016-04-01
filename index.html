@@ -7,10 +7,10 @@
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://use.typekit.net/fne3bnt.js"></script><script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script src="https://use.typekit.net/fne3bnt.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
+    <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" type="text/css" href="normalize.css" />
     <link rel="stylesheet" type="text/css" href="wwc-stylee.css" />
     <link rel="stylesheet" type="text/css" href="//d3d1m61yehgiwz.cloudfront.net/brandingbar/0.4/css/brandingbar.min.css.gz" />
@@ -158,52 +158,65 @@
   	  	  </ul>
   	  	</footer>
   	  </div>
-
-
-
   	</div>
-<!--
-  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
--->
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-     <!-- <script>
-    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-    e.src='https://www.google-analytics.com/analytics.js';
-    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-    ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-  </script> -->
-  </body>
-<script src="https://code.jquery.com/jquery-1.8.3.min.js" integrity="sha256-YcbK69I5IXQftf/mYD8WY0/KmEDCv1asggHpJk1trM8=" crossorigin="anonymous"></script>
-<script src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js"></script>
-<script>
-$(document).ready(function(){
-  var jsonURL = "https://raw.githubusercontent.com/sunlightpolicy/opendata/master/USlocalpolicylocations.geoJSON";
-  $.getJSON(jsonURL, function(data) {
-    var locations = [];
-    $.each(data['features'], function(key, val) {
-      if (val['properties'].hasOwnProperty('City') && val['properties']['City'] != '') {
-        locations.push(val);
-      }
-    });
-    var map = L.map('mapid').setView([40, -100], 3);
-    var mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
-    L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; ' + mapLink + ' Contributors',
-        maxZoom: 18
-    }).addTo(map);
+    <!--
+      <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+    -->
+      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+         <!-- <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+      </script> -->
+    <script src="https://code.jquery.com/jquery-1.8.3.min.js" integrity="sha256-YcbK69I5IXQftf/mYD8WY0/KmEDCv1asggHpJk1trM8=" crossorigin="anonymous"></script>
+    <script src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js"></script>
+    <script async type="text/javascript" src="https://sunlight-cdn.s3.amazonaws.com/brandingbar/0.4/js/brandingbar.min.js.gz"></script>
+    <script src="js/toggle.jquery.js"></script>
+    <script src="js/jquery.jfeed.pack.js"></script>
+    <script src="js/display-rss.jquery.js"></script>
+    <script>
+    $(document).ready(function(){
+      // url to get geoJSON from
+      var jsonURL = "https://raw.githubusercontent.com/sunlightpolicy/opendata/master/USlocalpolicylocations.geoJSON";
+      // get the getJSON from url
+      $.getJSON(jsonURL, function(data) {
 
-    for (var i = 0; i < locations.length; i++) {
-      var coords = locations[i]['geometry']['coordinates'];
-       var marker = L.marker([coords[1], coords[0]]).bindPopup('<a href="' + locations[i]['properties']['Policy URL'] + '">Policy Link</a>').addTo(map);
-    }
-  });
-});
-</script>
-<script async type="text/javascript" src="https://sunlight-cdn.s3.amazonaws.com/brandingbar/0.4/js/brandingbar.min.js.gz"></script>
-<script src="js/toggle.jquery.js"></script>
-<script src="js/jquery.jfeed.pack.js"></script>
-<script src="js/display-rss.jquery.js"></script>
+        // gets the locations in the geoJSON that have a city property
+        var locations = [];
+        $.each(data['features'], function(key, val) {
+          if (val['properties'].hasOwnProperty('City') && val['properties']['City'] != '') {
+            locations.push(val);
+          }
+        });
+
+        // set up map
+        var map = L.map('mapid').setView([40, -100], 3);
+        var mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+        L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; ' + mapLink + ' Contributors',
+          maxZoom: 18
+        }).addTo(map);
+
+        // set up icons for markers
+        var wwcIcon = L.icon({ iconUrl: 'i/pin-wwc.png', iconSize: [24, 38] });
+        var odpIcon = L.icon({ iconUrl: 'i/pin.png', iconSize: [24, 38]});
+
+        // iterate over locations in geoJSON which have cities (previously extracted above) and create markers
+        // on the map. The coordinates are flipped because of translation from lat/lng to x/y coordinates.
+        for (var i = 0; i < locations.length; i++) {
+          // determine which icon to use based on property in geoJSON using ternary operator (shorthand if/else)
+          var icon = locations[i]['properties']['WWC'] == 'True' ? wwcIcon : odpIcon;
+          // get coordinates of location.
+          var coords = locations[i]['geometry']['coordinates'];
+          // create marker at specified coordinates (swapped to convert lat/lng to x/y) and add popup on click.
+          var marker = L.marker([coords[1], coords[0]], {icon: icon}).bindPopup('<a href="' + locations[i]['properties']['Policy URL'] + '">Policy Link</a>').addTo(map);
+        }
+      });
+    });
+    </script>
+  </body>
 </html>
