@@ -42,100 +42,13 @@ a:focus {
   border-radius: 50%;
 }
 
-text-transform:capitalize;
-
-/***
- * Fonts
- */
-
- /** http://whatworkscities.bloomberg.org/content/themes/cities/style.css?ver=1.0.6  **/
- /**
-@font-face {
-  font-family: 'Futura Bk BT';
-  src: url('fonts/Bitstream - Futura Bk BT Book.eot');
-  src: url('fonts/Bitstream - Futura Bk BT Book.eot?#iefix') format('embedded-opentype'), **/  /* IE6-IE8 */  /** url('fonts/Bitstream - Futura Bk BT Book.woff') format('woff'), **/  /* Modern Browsers */ /** url('fonts/Bitstream - Futura Bk BT Book.ttf') format('truetype'), **/ /* Safari, Android, iOS */ /** /** url('fonts/Bitstream - Futura Bk BT Book.svg#b1c69dc361959c8748debfb44bd2016f') format('svg');
-  font-style: normal;
-  font-weight: 400;
-  
-  /* IE9 Compat Modes */
-  /* Legacy iOS */
-  /**
-}
 **/
+
+/** wwc uses versus text-transform:uppercase; **/
+
 /**
-@font-face {
-  font-family: 'Futura Md BT';
-  src: url('fonts/Bitstream - Futura Md BT Bold.eot');
-  src: url('fonts/Bitstream - Futura Md BT Bold.eot?#iefix') format('embedded-opentype'), **/  /* IE6-IE8 */  /** url('fonts/Bitstream - Futura Md BT Bold.woff') format('woff'), **/  /* Modern Browsers */ /** url('fonts/Bitstream - Futura Md BT Bold.ttf') format('truetype'), **/ /* Safari, Android, iOS */ /** url('fonts/Bitstream - Futura Md BT Bold.svg#3fc2bee58dbb778cde6c47c8792165c3') format('svg');
-  font-style: normal;
-  font-weight: 700;
-  
-  /* IE9 Compat Modes */
-  /* Legacy iOS */
-  /**
-}
-
-@font-face {
-  font-family: 'Futura Md BT';
-  src: url('fonts/Bitstream - Futura Md BT Medium.eot');
-  src: url('fonts/Bitstream - Futura Md BT Medium.eot?#iefix') format('embedded-opentype'), **/  /* IE6-IE8 */  /** url('fonts/Bitstream - Futura Md BT Medium.woff') format('woff'), **/  /* Modern Browsers */ /** url('fonts/Bitstream - Futura Md BT Medium.ttf') format('truetype'), **/ /* Safari, Android, iOS */ /** url('fonts/Bitstream - Futura Md BT Medium.svg#75529023e858c4637d1c4cf773e7b6bc') format('svg');
-  font-style: normal;
-  font-weight: 400;
-  
-  /* IE9 Compat Modes */
-  /* Legacy iOS */
-  /**
-}
-@font-face {
-  font-family: 'Futura Hv BT';
-  src: url('fonts/Bitstream - Futura Hv BT Heavy.eot');
-  src: url('fonts/Bitstream - Futura Hv BT Heavy.eot?#iefix') format('embedded-opentype'), **/  /* IE6-IE8 */  /** url('fonts/Bitstream - Futura Hv BT Heavy.woff') format('woff'), **/  /* Modern Browsers */ /** url('fonts/Bitstream - Futura Hv BT Heavy.ttf') format('truetype'), **/ /* Safari, Android, iOS */ /** url('fonts/Bitstream - Futura Hv BT Heavy.svg#abe28552df67548d04264d76071da393') format('svg');
-  font-style: normal;
-  font-weight: 400;
-  
-  /* IE9 Compat Modes */
-  /* Legacy iOS */
-  /**
-}
-@font-face {
-  font-family: 'DIN Next LT Pro Medium Cond';
-  src: url('fonts/DINNextLTPro-MediumCond.eot');
-  src: url('fonts/DINNextLTPro-MediumCond.eot?#iefix') format('embedded-opentype'), **/  /* IE6-IE8 */  /** url('fonts/DINNextLTPro-MediumCond.woff') format('woff'), **/  /* Modern Browsers */ /** url('fonts/DINNextLTPro-MediumCond.ttf') format('truetype'), **/ /* Safari, Android, iOS */ /** url('fonts/DINNextLTPro-MediumCond.svg#9a11daff3c1c54fb43dd13a2696ea23e') format('svg');
-  font-style: normal;
-  font-weight: 400;
-  
-  /* IE9 Compat Modes */
-  /* Legacy iOS */
-  /**
-}
-
-@font-face {
-  font-family: 'DIN Next LT Pro Bold Condensed';
-  src: url('fonts/DINNextLTPro-BoldCondensed.eot');
-  src: url('fonts/DINNextLTPro-BoldCondensed.eot?#iefix') format('embedded-opentype'), **/  /* IE6-IE8 */  /** url('fonts/DINNextLTPro-BoldCondensed.woff') format('woff'), **/  /* Modern Browsers */ /** url('fonts/DINNextLTPro-BoldCondensed.ttf') format('truetype'), **/ /* Safari, Android, iOS */ /** url('fonts/DINNextLTPro-BoldCondensed.svg#35aac03f26d6247334bc8f5710453b30') format('svg');
-  font-style: normal;
-  font-weight: 400;
-  
-  /* IE9 Compat Modes */
-  /* Legacy iOS */
-  /**
-}
-
-.refine-content .header .filter-title h4 a:hover {
-  font-weight: 500;
-  font-family: "Futura Md BT", Helevtica, Arial, sans-serif;
-  font-weight: 300;
-  color: #000000;
-  font-size: 14px;
-  text-transform: upperCase;
-  display: block;
-  text-decoration: none;
-}
+{text-transform:capitalize;}
 **/
-
-
-
-
 
 *{margin:0; padding:0; border:none;}
 
@@ -219,7 +132,8 @@ section#wwc-blogposts,section#wwc-promote-work,section#wwc-about,section#wwc-map
 #wwc-promote-work{background-image:url("i/icons/icon-06a.png");}
 #wwc-about{background-image:url("i/icons/icon-04a.png");}
 #logo{
-	background:url("i/wwc-icon.png") 50% 50% no-repeat; 
+	/** 106x120 **/
+	background:url("i/wwc-sunlight-foundation-logo-106x120.png") 50% 50% no-repeat; 
 	display:block; 
 	text-indent:-9999px;
 	height:200px;
@@ -455,6 +369,33 @@ section h2{
 	section{padding-left:0; margin-left:0; margin-right:0; background-position:10px 0;}
 	aside{position:relative; width:100%;}
 	aside a{text-align:center;}
+
+
+	h1{margin:0;}
+
+
+    header,.branding-bar{max-height:45px; overflow:hidden;}
+    h1{position:relative;} /** to get point down from top...this is not ideal...do not push to production **/
+
+    #logo{height:120px; 
+    	position:absolute; 
+    	width:100%;
+    	margin-left:-50%;
+    	top:10px; 
+    	left:50%;
+    }
+	aside{height:100px; margin-top:-45px; /** hide branding bar **/  }
+	nav{height:48px; width:48px; position:absolute; top:10px; right:10px; outline:1px solid #fff; background-color:#666;
+		cursor:pointer;
+	}
+	nav li{display:none;}
+
+
+
+
+
+
+
 	.maincontent{width:100%; margin-left:0;}
 	h1{font-size:30px;}
 	p{font-size:22px; padding-left:20px; padding-right:20px;}
