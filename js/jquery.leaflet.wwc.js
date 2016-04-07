@@ -38,18 +38,21 @@
 //		"Legal Means":"Legislation",
 //		"Policy URL":"http://www6.montgomerycountymd.gov/content/council/pdf/agenda/cm/2012/121126/20121126_GO2.pdf",
 //		"WWC":"False"}
-          
+// // county
+// {"type":"Feature","properties":{"County":"Howard County","Date":"7/7/2014","Legal Means":"Legislation","Policy URL":"https://apps.howardcountymd.gov/olis/LegislationDetail.aspx?LegislationID=839","WWC":"False"}
+// city
+// {"type":"Feature","properties":{"City":"Oakland, CA","Date":"10/15/2013","Legal Means":"Legislation","Policy URL":"http://www.scribd.com/doc/171673962/Resolution-Establishing-An-Open-Data-Policy-For-The-City-Of-Oakland-For-Making-Public-Data-Available-In-Machine-Readable-Formats-Using-Open-Data-Stand","WWC":"False"},"geometry":{"type":"Point","coordinates":[-122.2723388671875,37.814123701604466]}}
 
 			// using county here...pretty sure city is needed also...use both or go with "locality"? something else?
 		 // datetime=\"" . locations[i]['properties']['Date'] + "\"
 // var v01 = "<h1>" + locations[i]['properties']['Date'] + "<b style='font-size:65px; display:block'>v01</b>" + locations[i]['properties']['Policy URL'] + "</h1>";
-          var mapPinDate = "<b>Date</b> - <time datatime=\"" + locations[i]['properties']['Date'] + "\">" + locations[i]['properties']['Date'] + "</time>"; 
+          var mapPinDate = "<time datatime=\"" + locations[i]['properties']['Date'] + "\">" + locations[i]['properties']['Date'] + "</time>"; 
           
           var mapPinLinkPolicyURL = "<a href=\"" + locations[i]['properties']['Policy URL'] + "\">Policy URL</a>";
           
           // " + mapPinLinkPolicyURL + "<b style='display:block;'>" + mapPinLinkPolicyURL + "</b>
           
-          var mapPinH1 = "<h1 class=\"map-pin-h1\">Map Pin Title</h1>";
+          var mapPinH1 = "<h1 class=\"map-pin-h1\">" + locations[i]['properties']['City'] + "</h1>";
           
           // ask andy
           // var mapPinList = "<ul class\"xoxo map-pin-list\">";
@@ -59,8 +62,8 @@
           var mapPinList01 = "<ul class\"xoxo map-pin-list\">";
           var mapPinList02 = "<li>" + mapPinH1 + "</li>";
           var mapPinList03 = "<li>" + mapPinLinkPolicyURL + "</li>";
-          var mapPinList04 = "<li>" + mapPinDate + "</li>";
-          var mapPinList05 = "<li>Filler Content: Need City/County/Locality Name (for Title too!!)</li>";
+          var mapPinList04 = "<li><b>Date Signed:</b> " + mapPinDate + "</li>";
+          var mapPinList05 = "<li><b>Legal Means</b>: " + locations[i]['properties']['Legal Means'] + "</li>";
           var mapPinListClose = "</ul>";
           var mapPinListContent = mapPinList01 + mapPinList02 + mapPinList03 + mapPinList04 + mapPinList05 + mapPinListClose;
           
