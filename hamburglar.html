@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Basic Hamburger Menu</title>
+<link rel="stylesheet" href="http://dev.bowdenweb.com/sf/basic-hamburger-menu/css/normalize.css" type="text/css" />
+<!-- <link rel="stylesheet" href="css/style.css" /> -->
+<style>
+html {
+  height: 2000px;
+}
+.mobile {
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.mobile div {
+  display: none;
+}
+.mobile button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: 0;
+  text-indent: 200%;
+  overflow: hidden; /** hamburger-menu-basic-icon.png **/
+  background: rgba(255,255,255,0.8) url("http://i.imgur.com/vKRaKDX.png") center no-repeat;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background-size: 80%;
+  width: 30px;
+  height: 30px;
+  outline: none;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+.mobile button.expanded {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background-color: transparent;
+  border: 0;
+}
+.mobile a {
+  display: block;
+}
+a {
+  background: #eee;
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+}
+a:hover,
+a:active,
+a:focus {
+  background: #e7e7e7;
+}
+.desktop {
+  display: block;
+  overflow: hidden;
+}
+.desktop a {
+  width: 25%;
+  float: left;
+  border-right: 1px solid #ddd;
+  box-sizing: border-box;
+}
+.desktop a:last-child {
+  border-right: none;
+}
+article {
+  padding: 0 30px 15px;
+}
+@media (max-width: 800px) {
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+}
+</style>
+  </head>
+
+  <body>
+
+    <nav class="desktop">
+  <a href="#">Desktop 1</a>
+  <a href="#">Desktop 2</a>
+  <a href="#">Desktop 3</a>
+  <a href="#">Desktop 4</a>
+</nav>
+
+<nav class="mobile">
+  <button>Toggle</button>
+  <div>
+    <a href="#">Mobile 1</a>
+    <a href="#">Mobile 2</a>
+    <a href="#">Mobile 3</a>
+    <a href="#">Mobile 4</a>
+  </div>
+</nav>
+
+<article>
+  <h1>Basic Hamburger Menu</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quasi sint error perspiciatis quis rem nisi reiciendis doloribus cumque aliquid molestiae quos sed ex commodi ad eveniet asperiores distinctio vero.</p>
+</article>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<!-- <script src="js/index.js"></script> -->
+<script>
+$('button').click(function() {
+  $(this).toggleClass('expanded').siblings('div').slideToggle();
+});
+</script>
+  </body>
+</html>
