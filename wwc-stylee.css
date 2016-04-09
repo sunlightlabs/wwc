@@ -694,10 +694,14 @@ text #df5530
 .embedded-content{
 	position:relative;
 	background-color:#ffcb06;
-	margin:10% auto;
+	margin:5% auto;
 	padding-top:6em;
 	padding-bottom:6em;
 	width:100%;
+}
+.embedded-content:before{top:0;
+	position:absolute; content:""; z-index:100;
+	left:12%; height:8%; width:5%; background-color:#000;
 }
 .ref-doc{
 	width:60%;
@@ -715,8 +719,21 @@ text #df5530
 .ref-doc-link{
 	width:80%; margin-left:20%; display:block;
 	margin-top:1.5em;
-	font-weight:800;
+	font-weight:800; position:relative;
+
 }
+.ref-doc-link:before{
+	content:"";
+	position:absolute;
+	left:20%;
+	height:20px;
+	width:20px;
+	background-color:#000;
+	z-index:100;
+	border-radius:50%;
+}
+/** you may not need this **/
+.ref-doc-link:hover:before{background-color:#fff; z-index:101;}
 .ref-doc-google-link{
 	display:block;
 	position:absolute; 
@@ -754,10 +771,8 @@ padding:10px;}
 .trigger{
   /** background:url("http://bowdenweb.com/krs1/javascript/jquery/toggle/i/h2_trigger_a.gif") no-repeat;  **/
   /** background-image:url("plus-alt-32.png"); **/
-
-
 }
-.trigger-active{ /** background-image:url("x-alt-32.png")  **/ background-color:#000; color:#c0c0c0; border:12px solid #0f0;}
+.trigger-active.ref-doc-link:before{background-color:#00f;}
 
 /** feed display **/
 span.read-more{}

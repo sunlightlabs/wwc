@@ -6,23 +6,43 @@
     <meta name="description" content="Allows you to fetch your twitter posts without using the 1.1 API. Pure JavaScript! Learn more and get updates at: http://www.jasonmayes.com/projects/twitterApi/" />
     <meta name="author" content="Jason Mayes" />
     <title>Twitter Post Fetcher by Jason Mayes</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
+<style>
+#wrapper{width:400px; margin-left:auto; margin-right:auto; margin-top:200px;}
+#example1{
+    margin-left:auto; margin-right:auto;
+    outline:2px dotted #000;
+
+
+
+}
+
+
+#example1 ul{
+    background-color:#999;
+    padding:5%;
+    color:#fff;
+}
+#example1 a{color:#fff; text-decoration:none;}
+span img {display:none}
+span[data-scribe="element:verified_badge"]{display:none;}
+span[data-scribe="element:name"],span[data-scribe="element:screen_name"]{display:block; float:left;}
+span[data-scribe="element:name"]{margin-right:5%;}
+span[data-scribe="element:screen_name"]{}
+
+.tweet{clear:left; float:none; font-weight:700; color:#fff;}
+.tweet a{color:#fff;}
+.timePosted a{color:#fff; font-style:italic;}
+.interact{display:none;}
+
+
+
+
+
+</style>
   </head>
   <body>
-    <a id="linkage" href="http://www.jasonmayes.com/projects/twitterApi/" target="_blank">Visit my website</a>
     <h2>Query 1: My latest tweet</h2>
-    <div id="example1"></div>
-    <h2>Query 2: What people are saying about this component!</h2>
-    <div id="example2"></div>
-    <h2>Query 3: Last 5 Twitter posts using #WhatWorksCities, including images (if any)</h2>
-    <div id="example3"></div>
-    <h2>Query 4: Last 3 Twitter posts using hastag #API</h2>
-    <div id="example4"></div>
-    <h2>Query 5: Last 3 Twitter posts using hastag #API with custom callback</h2>
-    <div id="example5"></div>
-    <h2>Query 6: Last 3 Twitter posts using hastag #API with custom date formatter</h2>
-    <div id="example6"></div>
-
+    <div id="wrapper"><div id="example1"></div></div>
     <!-- moment.js only needed for Query 6 example -->
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.3/moment.min.js"></script>
 
