@@ -342,7 +342,7 @@
           if (showImages && images[n] !== undefined) {
             op += '<div class="media">' +
                 '<img src="' + extractImageUrl(images[n]) +
-                '" alt="Image from tweet" />' + '</div>';
+                '" alt="' + strip(authors[n].innerHTML) + '" />' + '</div>';
           }
 
           arrayTweets.push(op);

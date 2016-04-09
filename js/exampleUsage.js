@@ -70,8 +70,8 @@
 // hashtags.
 var config1 = {
   "id": '718179016407011328',
-  "domId": 'example1',
-  "maxTweets": 1,
+  "domId": 'sftweets',
+  "maxTweets": 2,
   "enableLinks": true
 };
 twitterFetcher.fetch(config1);

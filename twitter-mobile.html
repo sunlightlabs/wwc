@@ -8,7 +8,7 @@
     <title>Twitter Post Fetcher by Jason Mayes</title>
 <style>
 #wrapper{width:400px; margin-left:auto; margin-right:auto; margin-top:200px;}
-#example1{
+#sftweets{
     margin-left:auto; margin-right:auto;
     outline:2px dotted #000;
 
@@ -17,12 +17,12 @@
 }
 
 
-#example1 ul{
+#sftweets ul{
     background-color:#999;
     padding:5%;
     color:#fff;
 }
-#example1 a{color:#fff; text-decoration:none;}
+#sftweets a{color:#fff; text-decoration:none;}
 span img {display:none}
 span[data-scribe="element:verified_badge"]{display:none;}
 span[data-scribe="element:name"],span[data-scribe="element:screen_name"]{display:block; float:left;}
@@ -42,11 +42,17 @@ span[data-scribe="element:screen_name"]{}
   </head>
   <body>
     <h2>Query 1: My latest tweet</h2>
-    <div id="wrapper"><div id="example1"></div></div>
-    <!-- moment.js only needed for Query 6 example -->
+    <div id="wrapper"><div id="sftweets"></div></div>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.3/moment.min.js"></script>
-
     <script type="text/javascript" src="js/twitterFetcher.js"></script>
-    <script type="text/javascript" src="js/exampleUsage.js"></script>
+<script>
+var config1 = {
+  "id": '718179016407011328',
+  "domId": 'sftweets',
+  "maxTweets": 2,
+  "enableLinks": true
+};
+twitterFetcher.fetch(config1);
+</script>
   </body>
 </html>
