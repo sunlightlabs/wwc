@@ -694,14 +694,29 @@ text #df5530
 .embedded-content{
 	position:relative;
 	background-color:#ffcb06;
-	margin:5% auto;
-	padding-top:6em;
-	padding-bottom:6em;
+	margin:1em auto;
+	min-height:600px;
 	width:100%;
+	text-align:center;
 }
-.embedded-content:before{top:0;
-	position:absolute; content:""; z-index:100;
-	left:12%; height:8%; width:5%; background-color:#000;
+.embedded-content:before{
+	top:0;
+	position:absolute; 
+	content:""; 
+	z-index:100;
+	left:12%; 
+	height:8%; 
+	width:5%; 
+	/** fix color and shape **/
+	background-color:#000;
+}
+.embedded-google-doc{
+	margin:8em auto;
+	width:800px;
+	min-height:600px;
+	border:2px solid #999;
+	padding:1px;
+	background-color:#000;
 }
 .ref-doc{
 	width:60%;
