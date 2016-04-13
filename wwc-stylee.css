@@ -1,229 +1,41 @@
-/** 
-html {
-  font-size: 10px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.428571429;
-  color: #333333;
-  background-color: #ffffff;
-}
-a:hover,
-a:focus {
-  color: #23527c;
-  text-decoration: underline;
-}
-a:focus {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-.img-rounded {
-  border-radius: 6px;
-}
-.img-thumbnail {
-  padding: 4px;
-  line-height: 1.428571429;
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
-  border-radius: 4px;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  display: inline-block;
-  max-width: 100%;
-  height: auto;
-}
-.img-circle {
-  border-radius: 50%;
-}
-
-**/
-
-/** wwc uses versus text-transform:uppercase; **/
-
-/**
-{text-transform:capitalize;}
-**/
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-
-/**
- * 1. Set default font family to sans-serif.
- * 2. Prevent iOS and IE text size adjust after device orientation change,
- *    without disabling user zoom.
- */
-
+/** 1. Set default font family to sans-serif. 2. Prevent iOS and IE text size adjust after device orientation change, without disabling user zoom. **/
 html {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
-/**
- * Remove default margin.
- */
+body{margin:0}
 
-body {
-  margin: 0;
-}
+aside,footer,header,main,nav,section{display:block}
 
-/* HTML5 display definitions
-   ========================================================================== */
+/** Remove the gray background color from active links in IE 10. **/
+a{background-color:transparent}
 
-/**
- * Correct `block` display not defined for any HTML5 element in IE 8/9.
- * Correct `block` display not defined for `details` or `summary` in IE 10/11
- * and Firefox.
- * Correct `block` display not defined for `main` in IE 11.
- */
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block;
-}
-
-/**
- * 1. Correct `inline-block` display not defined in IE 8/9.
- * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
- */
-
-audio,
-canvas,
-progress,
-video {
-  display: inline-block; /* 1 */
-  vertical-align: baseline; /* 2 */
-}
-
-/**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
-
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-/**
- * Address `[hidden]` styling not present in IE 8/9/10.
- * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
- */
-
-[hidden],
-template {
-  display: none;
-}
-
-/* Links
-   ========================================================================== */
-
-/**
- * Remove the gray background color from active links in IE 10.
- */
-
-a {
-  background-color: transparent;
-}
-
-/**
- * Improve readability of focused elements when they are also in an
- * active/hover state.
- */
-
-a:active,
-a:hover {
-  outline: 0;
-}
+/** Improve readability of focused elements when they are also in an active/hover state. **/
+a:active,a:hover{outline:0}
 
 /* Text-level semantics
    ========================================================================== */
 
-/**
- * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
- */
-
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-
-/**
- * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
- */
-
-b,
-strong {
-  font-weight: bold;
-}
-
-/**
- * Address styling not present in Safari and Chrome.
- */
-
-dfn {
-  font-style: italic;
-}
+/** Address styling not present in IE 8/9/10/11, Safari, and Chrome. **/
+abbr[title]{border-bottom: 1px dotted}
+/** Address style set to `bolder` in Firefox 4+, Safari, and Chrome. **/
+b,strong{font-weight: bold;}
 
 /**
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari, and Chrome.
  */
 
-h1 {
-  font-size: 2em;
-}
-
-/**
- * Address styling not present in IE 8/9.
- */
-
-mark {
-  background: #ff0;
-  color: #000;
-}
+h1{font-size:2em}
 
 /**
  * Address inconsistent and variable font size in all browsers.
  */
 
-small {
-  font-size: 80%;
-}
-
-/**
- * Prevent `sub` and `sup` affecting `line-height` in all browsers.
- */
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sup {
-  top: -0.5em;
-}
-
-sub {
-  bottom: -0.25em;
-}
+small{font-size:80%}
 
 /* Embedded content
    ========================================================================== */
@@ -244,242 +56,6 @@ svg:not(:root) {
   overflow: hidden;
 }
 
-/* Grouping content
-   ========================================================================== */
-
-/**
- * Address margin not present in IE 8/9 and Safari.
- */
-
-figure {
-  margin: 1em 40px;
-}
-
-/**
- * Address differences between Firefox and other browsers.
- */
-
-hr {
-  box-sizing: content-box;
-  height: 0;
-}
-
-/**
- * Contain overflow in all browsers.
- */
-
-pre {
-  overflow: auto;
-}
-
-/**
- * Address odd `em`-unit font size rendering in all browsers.
- */
-
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-
-/* Forms
-   ========================================================================== */
-
-/**
- * Known limitation: by default, Chrome and Safari on OS X allow very limited
- * styling of `select`, unless a `border` property is set.
- */
-
-/**
- * 1. Correct color not being inherited.
- *    Known issue: affects color of disabled elements.
- * 2. Correct font properties not being inherited.
- * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
- */
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  color: inherit; /* 1 */
-  font: inherit; /* 2 */
-  margin: 0; /* 3 */
-}
-
-/**
- * Address `overflow` set to `hidden` in IE 8/9/10/11.
- */
-
-button {
-  overflow: visible;
-}
-
-/**
- * Address inconsistent `text-transform` inheritance for `button` and `select`.
- * All other form control elements do not inherit `text-transform` values.
- * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
- * Correct `select` style inheritance in Firefox.
- */
-
-button,
-select {
-  text-transform: none;
-}
-
-/**
- * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
- *    and `video` controls.
- * 2. Correct inability to style clickable `input` types in iOS.
- * 3. Improve usability and consistency of cursor style between image-type
- *    `input` and others.
- */
-
-button,
-html input[type="button"], /* 1 */
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button; /* 2 */
-  cursor: pointer; /* 3 */
-}
-
-/**
- * Re-set default cursor for disabled elements.
- */
-
-button[disabled],
-html input[disabled] {
-  cursor: default;
-}
-
-/**
- * Remove inner padding and border in Firefox 4+.
- */
-
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-/**
- * Address Firefox 4+ setting `line-height` on `input` using `!important` in
- * the UA stylesheet.
- */
-
-input {
-  line-height: normal;
-}
-
-/**
- * It's recommended that you don't attempt to style these elements.
- * Firefox's implementation doesn't respect box-sizing, padding, or width.
- *
- * 1. Address box sizing set to `content-box` in IE 8/9/10.
- * 2. Remove excess padding in IE 8/9/10.
- */
-
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
-}
-
-/**
- * Fix the cursor style for Chrome's increment/decrement buttons. For certain
- * `font-size` values of the `input`, it causes the cursor style of the
- * decrement button to change from `default` to `text`.
- */
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
- * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
- */
-
-input[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  box-sizing: content-box; /* 2 */
-}
-
-/**
- * Remove inner padding and search cancel button in Safari and Chrome on OS X.
- * Safari (but not Chrome) clips the cancel button when the search input has
- * padding (and `textfield` appearance).
- */
-
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
- * Define consistent border, margin, and padding.
- */
-
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-
-/**
- * 1. Correct `color` not being inherited in IE 8/9/10/11.
- * 2. Remove padding so people aren't caught out if they zero out fieldsets.
- */
-
-legend {
-  border: 0; /* 1 */
-  padding: 0; /* 2 */
-}
-
-/**
- * Remove default vertical scrollbar in IE 8/9/10/11.
- */
-
-textarea {
-  overflow: auto;
-}
-
-/**
- * Don't inherit the `font-weight` (applied by a rule above).
- * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
- */
-
-optgroup {
-  font-weight: bold;
-}
-
-/* Tables
-   ========================================================================== */
-
-/**
- * Remove most spacing between table cells.
- */
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-td,
-th {
-  padding: 0;
-}
-
-
-
-
-
-
-
-
 *{margin:0; padding:0; border:none;}
 
 html{}
@@ -489,9 +65,10 @@ body{
 .content{
 	font-family: "futura-pt", sans-serif;
 	background-color:#25305d;
+	/** background-color:#e7ede4; **/
 	/** background-color:#000; **/
 	/** put this into place prior to going live
-	background-color:#e7ede4;
+	background-color:#e7ede4; background-color:#25305d; background-color:#6cc8c5;
 	**/
 }
 h1,h2,h3,h4,h5,h6{
@@ -528,7 +105,8 @@ a{
 }
 aside{
 	position:fixed;
-	width:15%;
+	width:12%;
+	min-width:160px;
 	height:100%; 
 	background-color:#25305d;
 
@@ -558,12 +136,14 @@ section#wwc-blogposts,section#wwc-promote-work,section#wwc-about,section#wwc-map
 #wwc-promote-work{background-image:url("i/icons/icon-06a.png");}
 #wwc-about{background-image:url("i/icons/icon-04a.png");}
 #logo{
-	/** 106x120 **/
-	background:url("i/wwc-sunlight-foundation-logo-106x120.png") 50% 50% no-repeat; 
+	/** 106x120 **/  /** sprite-sf-wwc-logos.png **/
+	background:url("i/sunlight-foundation-wwc-logo-106x120.png") 50% 50% no-repeat; 
 	display:block; 
 	text-indent:-9999px;
 	height:200px;
 }
+/** this isn't supposed to be on hover, supposed to be when user is at top of document...make another sprite and fix this!!! **/
+#logo:hover{background-image:url("i/sunlight-foundation-wwc-logo-red-106x120.png");}
 .nav a{
 	font-weight:300;
 	letter-spacing:1px;
@@ -587,16 +167,16 @@ section#wwc-blogposts,section#wwc-promote-work,section#wwc-about,section#wwc-map
 	pointer-events:none;
 }
 .nav a:hover{
-	background-color:#181637; 
-	color:#a44238;
+	background-color:#181637;
+	color:#df5530;
 }
 .nav a:hover:before{
 	border-left-color:#181637;
 	border-width:20px;
 }
 .maincontent{
-	width:85%;
-	margin-left:15%;
+	width:88%;
+	margin-left:12%;
 	background-color:#6cc8c5;
 
 }
@@ -681,9 +261,7 @@ text #df5530
 	left:12%;
 	z-index:100;
 }
-#wwc-tweets{
-	background-color:#25305d;
-}
+
 
 
 
@@ -712,11 +290,11 @@ text #df5530
 }
 .embedded-google-doc{
 	margin:8em auto;
-	width:800px;
-	min-height:600px;
-	border:2px solid #999;
+	width:720px;
+	height:500px;
+	border:2px solid #df5530;
 	padding:1px;
-	background-color:#000;
+	background-color:#fff;
 }
 .ref-doc{
 	width:60%;
@@ -776,11 +354,26 @@ footer{padding-bottom:2em;}
 footer li{margin-top:1em; margin-bottom:1em; font-size:1em;}
 
 #wwc-blogposts .section-box{}
-#wwc-blogposts .section-box-01{background-color:#fff; padding:25px}
+#wwc-blogposts .section-box-feeds{background-color:#fff; padding:25px}
+.section-box-tweets{
+	/** twitter bg is not transparent....going to need to fix this!!! **/
+	/** background-color:#25305d; **/
+	background:#25305d url("i/twitter-desktop.png") 0 0 repeat;
+	height:350px;
+}
 #wwc-blogposts h2{background-color:#25305d; text-indent:1em;}
 #wwc-blogposts-all{
-	margin-top:-68px; margin-right:15px; font-size:30px; float:right; display:block; border:3px solid #df5530; text-indent:0; text-align:center; color:#df5530; line-height:30px;
-padding:10px;}
+	margin-top:-68px; 
+	margin-right:15px; 
+	font-size:30px; 
+	float:right; 
+	display:block; 
+	border:3px solid #df5530; 
+	text-indent:0; 
+	text-align:center; 
+	color:#df5530; 
+	line-height:30px;
+	padding:10px;}
 #wwc-blogposts h3{}
 /** javascript hooks **/
 .trigger{
@@ -880,8 +473,8 @@ section p{padding:0; }
 #wwc-blogposts h2{margin-left:0; text-indent:0;}
 #wwc-blogposts{position:relative;}
 #wwc-blogposts-all{margin:0; position:absolute; bottom:20px; left:30%;}
-.section-box-01{height:200px;}
-.section-box-01 h3{float:none; clear:left; width:100%; margin-left:10px; margin-right:10px;}
+.section-box-feeds{height:200px;}
+.section-box-feeds h3{float:none; clear:left; width:100%; margin-left:10px; margin-right:10px;}
 #wwc-blogposts{background-color:#fff;}
 #wwc-about .content-list:before{border-color:transparent;}
 #wwc-logo-wwc{float:none; height:106px;}
