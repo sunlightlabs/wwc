@@ -120,8 +120,7 @@ a{
 }
 aside{
 	position:fixed;
-	width:12%;
-	min-width:160px;
+	width:15%;
 	height:100%; 
 	background-color:#25305d;
 
@@ -130,8 +129,12 @@ header{
 	background-color:#e7ede4; 
 	height:45px;
 }
-footer{text-align:center;}
-
+footer{
+	text-align:center;
+}
+#wwc-about a{
+	color:#df5530;
+}
 
 section{
 	/** padding-bottom:4em; **/
@@ -139,7 +142,9 @@ section{
 	background-repeat:no-repeat;
 	background-position:5% 0;
 }
-section#wwc-blogposts,section#wwc-promote-work,section#wwc-about,section#wwc-map{border-bottom:none;}
+section#wwc-blogposts,section#wwc-promote-work,section#wwc-about,section#wwc-map{
+	border-bottom:none;
+}
 #wwc-open-data{background-image:url("i/icons/icon-04a.png");}
 #wwc-define-goals{background-image:url("i/icons/icon-05a.png");}
 #wwc-engage-stakeholders{background-image:url("i/icons/icon-03a.png");}
@@ -158,7 +163,7 @@ section#wwc-blogposts,section#wwc-promote-work,section#wwc-about,section#wwc-map
 #logo:hover{background-image:url("i/sunlight-foundation-wwc-logo-red-106x120.png");}
 .nav a{
 	font-weight:300;
-	letter-spacing:1px;
+	letter-spacing:2px;
 	font-family:"futura_mdcn_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color:#fff;
 	text-transform:uppercase;
@@ -187,26 +192,38 @@ section#wwc-blogposts,section#wwc-promote-work,section#wwc-about,section#wwc-map
 	border-width:20px;
 }
 .maincontent{
-	width:88%;
-	margin-left:12%;
+	width:85%;
+	margin-left:15%;
 	background-color:#6cc8c5;
 
 }
+/** totally fix this with this sprite...unnecessary images = more http requests **/
 .wwc-logo-headliner{
 	/** width for containment....may not be needed... **/
+	height:116px;
 	max-width:700px;
 	margin-left:auto;
 	margin-right:auto;
+	background:url("i/logo-split.png") 455px 0 no-repeat;
 }
 .wwc-logo{
+	background-color:#c0c0c0;
 	display:block;
-	height:119px;
+	height:116px;
+	background-repeat:no-repeat;
+	background-position:0 0;
+	text-indent:-9999px;
+	float:left;
 }
-#wwc-logo-wwc{float:left;}
+#wwc-logo-wwc{
+	background-image:url("i/what-works-cities-logotype.png");
+	width:448px;
+}
 #wwc-logo-sf{
-	float:right; 
-/** line-height for vertical alignment son **/
-	line-height:150px;}
+	width:180px;
+	background-image:url("i/sunlight-foundation-logotype.png");
+	margin-left:20px;
+}
 
 footer li a{color:#df5530; font-size:2em;}
 /** see
@@ -367,20 +384,27 @@ text #df5530
 }
 **/
 /** both will need :before + content:""; for adding arrow icons **/
-footer li a{margin-bottom:30px;}
+footer li a{margin-bottom:30px;
+	font-family:"futura_md_btbold", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;}
 footer em{font-size:1.5em}
-footer{padding-bottom:2em;}
+footer{padding-bottom:10em;}
 footer li{margin-top:1em; margin-bottom:1em; font-size:1em;}
 
-#wwc-blogposts .section-box{}
-#wwc-blogposts .section-box-feeds{background-color:#fff; padding:25px}
+
+.section-box-feeds{
+	background-color:#fff; 
+	padding:1em;
+}
 .section-box-tweets{
 	/** twitter bg is not transparent....going to need to fix this!!! **/
 	/** background-color:#25305d; **/
 	background:#25305d url("i/twitter-desktop.png") 0 0 repeat;
-	height:350px;
+	text-align:center;
 }
-#wwc-blogposts h2{background-color:#25305d; padding-left:1em;}
+#wwc-blogposts h2{
+	background-color:#25305d; 
+	padding-left:1em;
+}
 #wwc-blogposts-all{
 	margin-top:-68px; 
 	margin-right:15px; 
@@ -392,8 +416,9 @@ footer li{margin-top:1em; margin-bottom:1em; font-size:1em;}
 	text-align:center; 
 	color:#df5530; 
 	line-height:30px;
-	padding:10px;}
-#wwc-blogposts h3{}
+	padding:10px;
+}
+
 /** javascript hooks **/
 .trigger{
   /** background:url("http://bowdenweb.com/krs1/javascript/jquery/toggle/i/h2_trigger_a.gif") no-repeat;  **/
@@ -403,16 +428,30 @@ footer li{margin-top:1em; margin-bottom:1em; font-size:1em;}
 
 /** feed display **/
 span.read-more{}
-#rss-feed-viewer{height:100px;} /** height for bg color with floating elements **/
+#rss-feed-viewer{
+	padding-top:2em;
+	padding-bottom:2em;
+	min-height:50px;} /** height for bg color with floating elements **/
+#rss-feed-viewer:first-child{margin-left:2%;} /** alignment of three in a row **/
 h3.wwc-blog-post-title{
-	float:left; width:32%; 
+	height:100%;
+	float:left; 
+	width:32%; 
 	font-size:1.25em; 
 	padding-left:0;
+	margin-right:1%;
 }
-.wwc-blog-post-title{margin-right:1%;}
-h3.wwc-blog-post-title a{color:#000; font-weight:300; 	padding-left:.25em;
-	padding-right:.25em;}
-.wwc-blogposts-read-more{font-weight:700; position:relative;}
+.wwc-blog-post-title a{
+	color:#000; 
+	font-weight:300; 	
+	padding-left:.25em;
+	padding-right:.25em;
+}
+.wwc-blogposts-read-more{
+	font-weight:700; 
+	position:relative;
+	display:block;
+}
 .wwc-blogposts-read-more:before{
 	content:"";
 	position:absolute;
