@@ -2,7 +2,9 @@
 .tk-futura-pt{font-family:"futura-pt",sans-serif;}
 .tk-futura-pt-condensed{font-family:"futura-pt-condensed",sans-serif;}
 **/
-
+.futura-md-bt-bold{font-family:"futura_md_btbold", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;}
+.futura-md-btmedium{font-family:"futura_md_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;}
+.futura-mdcn-btmedium{font-family:"futura_mdcn_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;}
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /** 1. Set default font family to sans-serif. 2. Prevent iOS and IE text size adjust after device orientation change, without disabling user zoom. **/
@@ -12,7 +14,10 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
-body{margin:0}
+body{
+	margin:0;
+	font-family:"futura_md_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
 aside,footer,header,main,nav,section{display:block}
 
@@ -35,7 +40,7 @@ b,strong{font-weight: bold;}
  * contexts in Firefox 4+, Safari, and Chrome.
  */
 
-h1{font-size:2em}
+h1{font-size:4em}
 
 /**
  * Address inconsistent and variable font size in all browsers.
@@ -69,7 +74,7 @@ body{
 	color:#fff;
 }
 .content{
-	font-family: "futura-pt", sans-serif;
+	font-family:"futura_md_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	background-color:#25305d;
 	/** background-color:#e7ede4; **/
 	/** background-color:#000; **/
@@ -77,28 +82,30 @@ body{
 	background-color:#e7ede4; background-color:#25305d; background-color:#6cc8c5;
 	**/
 }
-h1,h2,h3,h4,h5,h6{
-	font-family: "futura-pt-condensed", sans-serif;
-}
+h1{
+	letter-spacing:3px; font-weight:500;
+	font-family:"futura_mdcn_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;}
+h2,h3,h4,h5,h6{font-family:"futura_mdcn_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;}
 h2{
 	margin-top:1.5em;
 	font-size:2.75em;
 	line-height:80px;
 	text-align:left;
 	height:80px;
+	font-weight:700;
 	text-transform:uppercase;
 }
 h2 a{display:block; /** padding-left:12%; **/ padding-left:12%;}
 h3{
 	margin-bottom:.5em;
-	font-weight:800; 
+	font-weight:500; 
 	font-size:2.5em; 
 	letter-spacing:2px;
 	position:relative;
 	padding-left:20%;
 }
-p{
-	font-size:2.2em; 
+p{font-family:"futura_md_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:2em; 
 	font-weight:300;
 	margin-bottom:.5em;
 }
@@ -153,7 +160,7 @@ section#wwc-blogposts,section#wwc-promote-work,section#wwc-about,section#wwc-map
 .nav a{
 	font-weight:300;
 	letter-spacing:1px;
-	font-family: "futura-pt-condensed", sans-serif;
+	font-family:"futura_mdcn_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color:#fff;
 	text-transform:uppercase;
 	text-indent:1.5em;
@@ -222,7 +229,7 @@ text #df5530
 	padding-top:14em;
 }
 #see-great-work{
-	font-weight:800;
+	font-weight:600;
 	margin:4em auto;
 	position:relative; 
 	display:block; 
@@ -315,10 +322,11 @@ text #df5530
 	text-transform:uppercase;
 	color:#df5530;
 }
-.ref-doc-link{
+.ref-doc-link{font-family:"futura_md_btbold", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	width:80%; margin-left:20%; display:block;
-	margin-top:1.5em;
-	font-weight:800; position:relative;
+	margin-top:1.5em; 
+	font-weight:700;
+	position:relative;
 
 }
 .ref-doc-link:before{
