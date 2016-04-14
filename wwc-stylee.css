@@ -95,7 +95,7 @@ h2{
 	font-weight:700;
 	text-transform:uppercase;
 }
-h2 a{display:block; /** padding-left:12%; **/ padding-left:12%;}
+.h2-icon{display:block; padding-left:12%;}
 h3{
 	margin-bottom:.5em;
 	font-weight:500; 
@@ -104,9 +104,11 @@ h3{
 	position:relative;
 	padding-left:20%;
 }
-p{font-family:"futura_md_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+p{
+	font-family:"futura_md_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size:2em; 
 	font-weight:300;
+	padding-top:.5em;
 	margin-bottom:.5em;
 }
 ul{
@@ -131,17 +133,14 @@ header{
 footer{text-align:center;}
 
 
-
-/** gutters **/
-section,footer{/** max-width:1500px; **/}
-section{}
 section{
-	padding-bottom:4em;
+	/** padding-bottom:4em; **/
 	border-bottom:4px solid #fff;
 	background-repeat:no-repeat;
 	background-position:5% 0;
 }
 section#wwc-blogposts,section#wwc-promote-work,section#wwc-about,section#wwc-map{border-bottom:none;}
+#wwc-open-data{background-image:url("i/icons/icon-04a.png");}
 #wwc-define-goals{background-image:url("i/icons/icon-05a.png");}
 #wwc-engage-stakeholders{background-image:url("i/icons/icon-03a.png");}
 #wwc-craft-policy{background-image:url("i/icons/icon-02a.png");}
@@ -262,30 +261,32 @@ text #df5530
 	position:relative;
 }
 .content-list:before{}
-.content-list p{margin-left:20%; margin-right:10%;}
-.li-header{margin-top:30px; position:relative;}
+.content-list p{
+	margin-left:20%; 
+	margin-right:10%;
+}
+.li-header{
+	padding-top:30px; 
+	position:relative;
+}
+.li-header h3{
+	height:58px; /** 8px accounts for border 4px *2 **/
+	margin-bottom:0;
+}
 .li-header:before{
 	position:absolute;
 	content:"";
 	border:4px solid #df5530;
 	height:50px;
 	width:50px;
-	top:-4px;
 	left:12%;
 	z-index:100;
 }
-
-
-
-
-
-
-
-
 .embedded-content{
 	position:relative;
 	background-color:#ffcb06;
-	margin:1em auto;
+	margin-left:auto;
+	margin-right:auto;
 	min-height:600px;
 	width:100%;
 	text-align:center;
@@ -295,11 +296,12 @@ text #df5530
 	position:absolute; 
 	content:""; 
 	z-index:100;
-	left:12%; 
-	height:8%; 
-	width:5%; 
-	/** fix color and shape **/
-	background-color:#000;
+	left:20%;
+	width:0px; 
+	height:0px; 
+	border-left:30px solid transparent;
+	border-right:30px solid transparent;
+	border-top:30px solid #6cc8c5;
 }
 .embedded-google-doc{
 	margin:8em auto;
@@ -323,8 +325,11 @@ text #df5530
 	color:#df5530;
 }
 .ref-doc-link{font-family:"futura_md_btbold", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	width:80%; margin-left:20%; display:block;
-	margin-top:1.5em; 
+	width:80%; 
+	margin-left:20%; 
+	display:block;
+	margin-top:3.5em;
+	margin-bottom:2.5em;
 	font-weight:700;
 	position:relative;
 
@@ -375,7 +380,7 @@ footer li{margin-top:1em; margin-bottom:1em; font-size:1em;}
 	background:#25305d url("i/twitter-desktop.png") 0 0 repeat;
 	height:350px;
 }
-#wwc-blogposts h2{background-color:#25305d; text-indent:1em;}
+#wwc-blogposts h2{background-color:#25305d; padding-left:1em;}
 #wwc-blogposts-all{
 	margin-top:-68px; 
 	margin-right:15px; 
@@ -399,8 +404,14 @@ footer li{margin-top:1em; margin-bottom:1em; font-size:1em;}
 /** feed display **/
 span.read-more{}
 #rss-feed-viewer{height:100px;} /** height for bg color with floating elements **/
-h3.wwc-blog-post-title{float:left; width:33%; font-size:1.25em;}
-h3.wwc-blog-post-title a{color:#000; font-weight:300;}
+h3.wwc-blog-post-title{
+	float:left; width:32%; 
+	font-size:1.25em; 
+	padding-left:0;
+}
+.wwc-blog-post-title{margin-right:1%;}
+h3.wwc-blog-post-title a{color:#000; font-weight:300; 	padding-left:.25em;
+	padding-right:.25em;}
 .wwc-blogposts-read-more{font-weight:700; position:relative;}
 .wwc-blogposts-read-more:before{
 	content:"";
