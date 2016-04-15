@@ -11,10 +11,10 @@
     <!-- Place favicon.ico in the root directory -->
     <!-- <link rel="stylesheet" type="text/css" href="normalize.css" /> -->
     <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css" />
     <link rel="stylesheet" type="text/css" href="wwc-stylee.css" />
     <link rel="stylesheet" type="text/css" href="//d3d1m61yehgiwz.cloudfront.net/brandingbar/0.4/css/brandingbar.min.css.gz" />
     <link rel="stylesheet" type="text/css" href="//d3d1m61yehgiwz.cloudfront.net/sf-icons/0.2/css/sf-icons.min.css.gz" />
-    <link rel="stylesheet" type="text/css" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css" />
   </head>
   <body>
   	<div class="content">
@@ -37,8 +37,8 @@
       </aside>
   	  <div class="maincontent">
   	  	<section id="wwc-first">
-  	  	  <h1>Bring open data to your city</h1>
-          <p>Join cities across the U.S. that are using open data and evidence to improve the lives of residents.</p>
+  	  	  <h1 id="h1-main">Bring open data to your city</h1>
+          <p id="p-main">Join cities across the U.S. that are using open data and evidence to improve the lives of residents.</p>
   	  	  <a id="see-great-work" class="futura-md-bt-bold" href="#open-data-cities">See The Great Work Other Cities Are Doing</a>
   	  	</section>
         <!-- <section id="wwc-open-data">
@@ -147,10 +147,10 @@
           </ul>
   	  	</section>
         <section id="wwc-blogposts">
-  	  	  <h2><a id="blogposts" href="#nogo">#WhatWorksCities Blog Posts</a></h2>
-          <a id="wwc-blogposts-all" href="http://sunlightfoundation.com/blog/tag/what-works-cities/">All Blog Posts</a>
-          <div class="section-box section-box-feeds clearright">
-            <div id="rss-feed-viewer"></div>
+  	  	  <div class="blogposts-box">
+            <h2><a id="blogposts" href="#nogo">#WhatWorksCities Blog Posts</a></h2>
+            <a id="wwc-blogposts-all" href="http://sunlightfoundation.com/blog/tag/what-works-cities/">All Blog Posts</a>
+            <div class="section-box section-box-feeds clearright"><div id="rss-feed-viewer"></div></div>
           </div>
           <div class="section-box section-box-tweets clearleft">
             <div id="wrapper"><div id="sftweets">
@@ -161,8 +161,8 @@
   	  	<section id="wwc-about">
   	  	  <h2><a id="about" class="h2-icon" href="#nogo">About</a></h2>
           <ul class="xoxo content-list">
-            <li><p>This framework is a result of the work the <a href="https://sunlightfoundation.com/">Sunlight Foundation</a> is doing in conjunction with the <a href="http://whatworkscities.bloomberg.org/">What Works Cities</a> project.</p></li>
-  	  	    <li><p>Launched by Bloomberg Philanthropies in April 2015, What Works Cities is a national initiative to help 100 mid-sized American cities enhance their use of data and evidence to improve services, inform local decision-making and engage residents. We are the nation's most comprehensive initiative helping local leaders identify and invest in what works.</p></li>
+            <li><p>This framework is a result of the work the <a href="https://sunlightfoundation.com/">Sunlight Foundation</a> is doing in conjunction with the <a href="http://whatworkscities.bloomberg.org/">What Works Cities</a> project.</p>
+            <p>Launched by Bloomberg Philanthropies in April 2015, What Works Cities is a national initiative to help 100 mid-sized American cities enhance their use of data and evidence to improve services, inform local decision-making and engage residents. We are the nation's most comprehensive initiative helping local leaders identify and invest in what works.</p></li>
           </ul>
   	  	</section>
   	  	<footer>

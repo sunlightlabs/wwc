@@ -13,7 +13,6 @@ html {
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
-
 body{
 	margin:0;
 	font-family:"futura_md_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -561,8 +560,35 @@ h3.wwc-blog-post-title{
 	z-index:100;
 }
 #tweets-nojs{position:absolute; top:20%; left:45%;}
-.leaflet-popup-content{color:#000;}
-
+.leaflet-popup-content-wrapper{
+	border-radius:0;
+}
+.leaflet-popup-content-wrapper,.leaflet-popup-tip{
+	background:#ffd44f;
+	opacity:.85;
+}
+h1.map-pin-h1,.leaflet-container a.leaflet-popup-close-button,.leaflet-map-date{
+	font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+h1.map-pin-h1{
+	font-size:2em;
+	color:#fff;
+}
+.leaflet-map-date{
+	color:#fff;
+	font-style:italic;
+	font-size:1.5em;
+}
+.leaflet-popup-content{
+	padding:1em;
+}
+.leaflet-container a.leaflet-popup-close-button{
+	color:#df5530;
+}
+.leaflet-container a{
+	color:#df5530; 
+	font-size:1.5em;
+}
 /** css animations/transformations **/
 /** :target animation of logo **/
 @-webkit-keyframes target {
@@ -604,7 +630,7 @@ section h2{
 
 
 @media screen and (max-width: 480px) {
-	section{padding-left:0; margin-left:0; margin-right:0; background-position:10px 0;}
+	section{padding-left:0; margin-left:0; margin-right:0; background-position:20px 0;}
 	aside{
 		position:relative; 
 		width:100%;
@@ -645,16 +671,25 @@ section h2{
 		width:48px; 
 		position:absolute; 
 		top:12px; 
-		right:10px;
+		right:20px;
 		z-index:200; /** so you can click through **/
-		outline:1px solid #fff; 
-		background-color:#666;
+		background:url("i/hamburglar-nav-white-048.png") 0 0 no-repeat;
 		cursor:pointer;
+	}
+	nav ul:hover{
+		background-image:url("i/hamburglar-nav-red-048.png");
 	}
 	nav ul{
 	}
 	nav li{display:none; /** hide on load **/}
-	nav.expanded{		background:url("i/bg-nav-rwd.png") 0 0 repeat;}
+	nav.expanded{
+		background:url("i/bg-nav-rwd.png") 0 0 repeat;
+	}
+	/** this is no bueno
+	nav.expanded ul:hover{
+		background-image:url("i/hamburglar-nav-blue-048.png");
+	}
+	**/
 	nav.expanded ul{
 		outline:none;
 		position:relative;
@@ -664,6 +699,7 @@ section h2{
 		margin-left:auto;
 		margin-right:auto;
 		background-color:#25305d;
+		background-image:none;
 		padding-top:60px;
 
 	} 
@@ -687,67 +723,145 @@ section h2{
 		right:50px;
 		background:url("i/button-close-nav-rwd.png") 0 0 no-repeat;
 	}
+	.maincontent{
+		width:100%; 
+		margin-left:0;
+	}
+	#h1-main{
+		font-size:1.5em; 
+		padding-left:1em; 
+		padding-right:1em;
+	}
+	#p-main{
+		padding-left:1em; 
+		padding-right:1em;
+	}
+	p{
+		font-size:.85em; 
+		padding-left:0; padding-right:0;
+	}
+	#see-great-work{
+		width:90%; 
+		font-size:0.75em; margin:2em auto 4em auto;
+	}
+	h2{
+		margin-left:80px; 
+		font-size:1.35em;
+	}
+	.content-list{
+		position:relative; 
+	}
+	.content-list p{
+		line-height:200%;
+	}
+	.content-list p + p{
+		padding-top:1em;
+	}
+	.li-header{
+		padding-top:10px;
+	}
+	.li-header:before{
+		top:15px; 
+		left:35px; 
+		height:25px; 
+		width:25px;
+	}
+	.li-header h3{
+		height:auto;
+		font-size:1.15em;
+		line-height:250%;
+	}
+	.ref-doc-link{
+		margin-top:2em;
+	}
+	.ref-doc-link span{
+		font-size:.85em;
+	}
+	.trigger{
+		padding-left:0;
+	}
+	#wwc-blogposts h2{
+		margin-left:0; 
+		text-indent:0;
+		line-height:1.5em;
+		height:auto;
+		padding-top:.5em;
+		padding-bottom:.5em;
+	}
+	#wwc-blogposts,.blogposts-box{
+		position:relative;
+	}
+	.blogposts-box{
+		padding-bottom:5em;
+	}
+	#wwc-blogposts-all{
+		float:none;
+		clear:left;
+		position:absolute; 
+		bottom:1.75em;
+		left:120px;
+		font-size:1em;
+	}
+	#wwc-blogposts-all:before{
+		background-image:url("i/arrow-right-bg-white.png");
+
+	}
+	.section-box-feeds{
+		min-height:200px;
+	}
+	.section-box-feeds h3{
+		float:none; 
+		clear:left; 
+		width:100%	
+	}
+	#wwc-blogposts{
+		background-color:#fff;
+	}
+	#rss-feed-viewer{
+		padding-top:1em;
+		padding-bottom:1em;
+	}
+	h3.wwc-blog-post-title{
+		font-size:1.05em;
+		margin-bottom:1.5em;
+	}
+	p.tweet{
+		font-size:1em;
+		font-weight:700;
+	}
+	#wwc-about .content-list:before{
+		border-color:transparent;
+	}
+
+	.wwc-logo{
+		height:56px;
+		float:none;
+		margin-left:auto; 
+		margin-right:auto;
+	}
+	#wwc-logo-wwc{
+		background-image:url("i/what-works-cities-logotype-w300.png");
+		background-position:50% 50%;
+	}
+	#wwc-logo-sf{
+		width:100%;
+		background-image:url("i/sunlight-foundation-logotype-h56.png");
+		background-position:50% 50%;
+	}
+	footer li.wwc-logo-headliner{
+		/** width for containment....may not be needed... **/
+		height:112px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-bottom:30px;
+		background-image:none;
+	}
+	section#wwc-map div#mapid{
+		height:300px !important;
+	}
 
 
 
-/**
-width:20px;
-height:20px;
-
-**/
-
-
-
-
-
-
-	.maincontent{width:100%; margin-left:0;}
-	h1{font-size:30px;}
-	p{font-size:22px; padding-left:20px; padding-right:20px;}
-	#see-great-work{width:90%; font-size:15px;}
-	h2{margin-left:80px; font-size:25px;}
-	.content-list{position:relative; padding-top:20px;}
-	.li-header:before{top:0; left:-55px; height:30px; width:30px;}
-	h3{font-size:25px;}
-	section p{padding:0; }
-	.trigger{padding-left:0;}
-#wwc-blogposts h2{margin-left:0; text-indent:0;}
-#wwc-blogposts{position:relative;}
-#wwc-blogposts-all{
-	margin:0; 
-	position:absolute; 
-	bottom:20px; 
-	left:30%;
-}
-.section-box-feeds{height:200px;}
-.section-box-feeds h3{float:none; clear:left; width:100%; margin-left:10px; margin-right:10px;}
-#wwc-blogposts{background-color:#fff;}
-#wwc-about .content-list:before{border-color:transparent;}
-
-.wwc-logo{
-	height:56px;
-	float:none;
-	margin-left:auto; 
-	margin-right:auto;
-}
-#wwc-logo-wwc{
-	background-image:url("i/what-works-cities-logotype-w300.png");
-	background-position:50% 50%;
-}
-#wwc-logo-sf{
-	width:100%;
-	background-image:url("i/sunlight-foundation-logotype-h56.png");
-	background-position:50% 50%;
-}
-
-footer li.wwc-logo-headliner{
-	/** width for containment....may not be needed... **/
-	height:112px;
-	margin-left:auto;
-	margin-right:auto;
-	margin-bottom:30px;
-	background-image:none;
-}
 
 
 
@@ -762,9 +876,19 @@ footer li.wwc-logo-headliner{
 
 
 
+	#wwc-about{
+		padding-bottom:0;
+	}
+	footer{
+		padding-bottom:3em;
+	}
+	footer li em{
+		font-size:.85em;
+	}
+	footer li a{
+		margin-bottom:10px; 
+		font-size:1em;
+	}
 
 
-
-#wwc-about{padding-bottom:0;}
-footer li a{margin-bottom:10px; font-size:20px;}
 }

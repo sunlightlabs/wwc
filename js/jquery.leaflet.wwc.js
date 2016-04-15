@@ -46,8 +46,8 @@
 // using county here...pretty sure city is needed also...use both or go with "locality"? something else?
 // datetime=\"" . locations[i]['properties']['Date'] + "\"
 // var v01 = "<h1>" + locations[i]['properties']['Date'] + "<b style='font-size:65px; display:block'>v01</b>" + locations[i]['properties']['Policy URL'] + "</h1>";
-          var mapPinDate = "<time datatime=\"" + locations[i]['properties']['Date'] + "\">" + locations[i]['properties']['Date'] + "</time>"; 
-          var mapPinLinkPolicyURL = "<a href=\"" + locations[i]['properties']['Policy URL'] + "\">Policy URL</a>";
+          var mapPinDate = "<time class=\"leaflet-map-date\" datatime=\"" + locations[i]['properties']['Date'] + "\">" + locations[i]['properties']['Date'] + "</time>"; 
+          var mapPinLinkPolicyURL = "<a href=\"" + locations[i]['properties']['Policy URL'] + "\">" + locations[i]['properties']['Legal Means'] + "</a>";
           var mapPinH1 = "<h1 class=\"map-pin-h1\">" + locations[i]['properties']['City'] + "</h1>";
           
           // ask andy
@@ -57,11 +57,11 @@
           
           var mapPinList01 = "<ul class\"xoxo map-pin-list\">";
           var mapPinList02 = "<li>" + mapPinH1 + "</li>";
-          var mapPinList03 = "<li>" + mapPinLinkPolicyURL + "</li>";
-          var mapPinList04 = "<li><b>Date Signed:</b> " + mapPinDate + "</li>";
-          var mapPinList05 = "<li><b>Legal Means</b>: " + locations[i]['properties']['Legal Means'] + "</li>";
+          var mapPinList03 = "<li>" + mapPinDate + "</li>";
+          var mapPinList04 = "<li>" + mapPinLinkPolicyURL + "</li>";
+          // var mapPinList05 = "<li><b>Legal Means</b>: " + locations[i]['properties']['Legal Means'] + "</li>";
           var mapPinListClose = "</ul>";
-          var mapPinListContent = mapPinList01 + mapPinList02 + mapPinList03 + mapPinList04 + mapPinList05 + mapPinListClose;
+          var mapPinListContent = mapPinList01 + mapPinList02 + mapPinList03 + mapPinList04 + mapPinListClose;
           var mapPinContent = "<div class=\"map-pin-content\">" + mapPinListContent + "</div>";
           
 
