@@ -132,7 +132,7 @@ header{
 footer{
 	text-align:center;
 }
-#wwc-about a{
+#wwc-about .content-list a{
 	color:#df5530;
 }
 
@@ -163,6 +163,7 @@ section#wwc-blogposts,section#wwc-promote-work,section#wwc-about,section#wwc-map
 #logo:hover{background-image:url("i/sunlight-foundation-wwc-logo-red-106x120.png");}
 .nav a{
 	font-weight:300;
+	font-size:20px;
 	letter-spacing:2px;
 	font-family:"futura_mdcn_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color:#fff;
@@ -189,7 +190,7 @@ section#wwc-blogposts,section#wwc-promote-work,section#wwc-about,section#wwc-map
 }
 .nav a:hover:before{
 	border-left-color:#181637;
-	border-width:20px;
+	border-width:26px;
 }
 .maincontent{
 	width:85%;
@@ -307,6 +308,7 @@ text #df5530
 	min-height:600px;
 	width:100%;
 	text-align:center;
+	display:none;
 }
 .embedded-content:before{
 	top:0;
@@ -342,24 +344,28 @@ text #df5530
 	color:#df5530;
 }
 .ref-doc-link{font-family:"futura_md_btbold", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	width:80%; 
 	margin-left:20%; 
 	display:block;
 	margin-top:3.5em;
 	margin-bottom:2.5em;
-	font-weight:700;
+	font-weight:500;
 	position:relative;
-
+	height:20px;
 }
-.ref-doc-link:before{
+.ref-doc-link span{
+	position:relative; 
+	padding-right:25px;
+	font-size:20px;
+	line-height:20px;
+}
+.ref-doc-link span:before{
 	content:"";
 	position:absolute;
-	left:20%;
+	right:0;
 	height:20px;
 	width:20px;
-	background-color:#000;
+	background:url("i/arrow-right.png") 0 0 no-repeat;
 	z-index:100;
-	border-radius:50%;
 }
 /** you may not need this **/
 .ref-doc-link:hover:before{background-color:#fff; z-index:101;}
@@ -405,7 +411,17 @@ footer li{margin-top:1em; margin-bottom:1em; font-size:1em;}
 	text-align:center; 
 	color:#df5530; 
 	line-height:30px;
-	padding:10px;
+	padding:10px 40px 10px 10px;
+	position:relative;
+}
+#wwc-blogposts-all:before{
+	content:"";
+	position:absolute;
+	width:20px;
+	height:20px;
+	background:url("i/arrow-right-bg-darkblue.png") 0 0 no-repeat;
+	right:10px;
+	top:15px;
 }
 .section-box-feeds{
 	clear:right;
@@ -419,7 +435,7 @@ footer li{margin-top:1em; margin-bottom:1em; font-size:1em;}
 	float:none;
 	/** twitter bg is not transparent....going to need to fix this!!! **/
 	/** background-color:#25305d; **/
-	background:#25305d url("i/twitter-desktop.png") 0 0 repeat;
+	background:#25305d url("i/bg-stripe.png") 0 0 repeat;
 	text-align:center;
 }
 #wrapper{
@@ -427,7 +443,6 @@ footer li{margin-top:1em; margin-bottom:1em; font-size:1em;}
 }
 #sftweets{
 	height:100%;
-	outline:2px dotted #000;
 }
 #sftweets ul{
   height:100%;
@@ -438,13 +453,35 @@ footer li{margin-top:1em; margin-bottom:1em; font-size:1em;}
 	height:100%;
 	text-align:left;
 }
-.user{margin-top:1em; margin-bottom:1em; width:100%; height:30px; background-color:#000;}
-.user a{display:block; padding-left:20px; }
-.tweet{clear:left; float:none; padding:0 0 0 20px; margin:0;}
-.timePosted{padding:0 0 0 20px; margin:0;}
+.user{
+	margin-top:1em; 
+	margin-bottom:1.5em; 
+	width:100%; 
+	height:30px; 
+	line-height:30px;
+}
+.user a{
+	display:block; 
+	padding-left:20px; 
+}
+p.tweet,p.timePosted{
+	padding:0 0 0 20px; 
+}
+p.tweet{
+	margin:0;
+	clear:left; 
+	float:none;
+	font-size:1.5em;
+}
+p.timePosted{
+	margin:1.5em 0 0 0;
+	font-size:1em;
+	line-height:30px;
+	height:30px;
+}
 #sftweets .user div{}
 #sftweets .user div a{}
-.user span{float:left; display:block; margin-right:5px;}
+.user span{float:left; display:block;}
 #sftweets .user div a span img{}
 #sftweets .user div a span div{}
 #sftweets ul li.tweet{}
@@ -453,11 +490,15 @@ footer li{margin-top:1em; margin-bottom:1em; font-size:1em;}
 
 #sftweets a{color:#fff; text-decoration:none;}
 .user span img,.user span[data-scribe="element:verified_badge"]{display:none;}
-span[data-scribe="element:name"],span[data-scribe="element:screen_name"]{display:block; float:left;}
-span[data-scribe="element:name"]{margin-right:5%;}
-span[data-scribe="element:screen_name"]{}
 
-.tweet{clear:left; float:none; font-weight:700; color:#fff;}
+span[data-scribe="element:name"]{margin-right:1em}
+span[data-scribe="element:screen_name"]{}
+#sftweets a[data-scribe="element:url"]{
+	color:#df5530;
+	text-decoration:underline;
+}
+#sftweets a[data-scribe="element:url"] span + span{display:none;}
+
 .tweet a{color:#fff;}
 .timePosted a{color:#fff; font-style:italic;}
 .interact{display:none;}
@@ -492,9 +533,11 @@ h3.wwc-blog-post-title{
 	padding-left:0;
 	margin-right:1%;
 	margin-bottom:0;
+	font-weight:300;
+	font-family:"futura_md_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .wwc-blog-post-title a{
-	color:#000; 
+	color:#25305d; 
 	font-weight:300; 	
 	padding-left:.25em;
 	padding-right:.25em;
@@ -504,11 +547,20 @@ h3.wwc-blog-post-title{
 	font-weight:700; 
 	position:relative;
 	display:block;
+	line-height:20px;
 }
-.wwc-blogposts-read-more:before{
+.wwc-blogposts-read-more span{
+	position:relative;
+	padding-right:25px;
+}
+.wwc-blogposts-read-more span:before{
 	content:"";
 	position:absolute;
-
+	right:0;
+	height:100%;
+	width:20px;
+	background:url("i/arrow-right-bg-white.png") 0 50% no-repeat;
+	z-index:100;
 }
 #tweets-nojs{position:absolute; top:20%; left:45%;}
 .leaflet-popup-content{color:#000;}
@@ -589,7 +641,12 @@ section p{padding:0; }
 .trigger{padding-left:0;}
 #wwc-blogposts h2{margin-left:0; text-indent:0;}
 #wwc-blogposts{position:relative;}
-#wwc-blogposts-all{margin:0; position:absolute; bottom:20px; left:30%;}
+#wwc-blogposts-all{
+	margin:0; 
+	position:absolute; 
+	bottom:20px; 
+	left:30%;
+}
 .section-box-feeds{height:200px;}
 .section-box-feeds h3{float:none; clear:left; width:100%; margin-left:10px; margin-right:10px;}
 #wwc-blogposts{background-color:#fff;}

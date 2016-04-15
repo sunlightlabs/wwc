@@ -15,7 +15,7 @@ jQuery(function() {
                 + item.link
                 + '">'
                 + item.title
-                + ' <span class="wwc-blogposts-read-more">Read</span></a>'
+                + ' <span class="wwc-blogposts-read-more"><span>Read</span></span></a>'
                 + '</h3>';
             }
             
