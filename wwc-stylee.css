@@ -1,10 +1,6 @@
-/** current typekit fonts 2016-04-12  
-.tk-futura-pt{font-family:"futura-pt",sans-serif;}
-.tk-futura-pt-condensed{font-family:"futura-pt-condensed",sans-serif;}
-**/
-.futura-md-bt-bold{font-family:"futura_md_btbold", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;}
-.futura-md-btmedium{font-family:"futura_md_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;}
-.futura-mdcn-btmedium{font-family:"futura_mdcn_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;}
+*{margin:0; padding:0; border:none;}
+
+aside,footer,header,main,nav,section{display:block}
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /** 1. Set default font family to sans-serif. 2. Prevent iOS and IE text size adjust after device orientation change, without disabling user zoom. **/
@@ -14,64 +10,25 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 body{
-	margin:0;
 	font-family:"futura_md_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#fff;
 }
-
-aside,footer,header,main,nav,section{display:block}
+/** current typekit fonts 2016-04-12   .tk-futura-pt{font-family:"futura-pt",sans-serif;} .tk-futura-pt-condensed{font-family:"futura-pt-condensed",sans-serif;} **/
+.futura-md-bt-bold{font-family:"futura_md_btbold", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;}
+.futura-md-btmedium{font-family:"futura_md_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;}
+.futura-mdcn-btmedium{font-family:"futura_mdcn_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;}
 
 /** Remove the gray background color from active links in IE 10. **/
 a{background-color:transparent}
-
-/** Improve readability of focused elements when they are also in an active/hover state. **/
 a:active,a:hover{outline:0}
-
-/* Text-level semantics
-   ========================================================================== */
-
-/** Address styling not present in IE 8/9/10/11, Safari, and Chrome. **/
-abbr[title]{border-bottom: 1px dotted}
-/** Address style set to `bolder` in Firefox 4+, Safari, and Chrome. **/
 b,strong{font-weight: bold;}
-
-/**
- * Address variable `h1` font-size and margin within `section` and `article`
- * contexts in Firefox 4+, Safari, and Chrome.
- */
-
 h1{font-size:4em}
-
-/**
- * Address inconsistent and variable font size in all browsers.
- */
-
 small{font-size:80%}
+img{border:0}
+svg:not(:root){overflow: hidden}
 
-/* Embedded content
-   ========================================================================== */
 
-/**
- * Remove border when inside `a` element in IE 8/9/10.
- */
 
-img {
-  border: 0;
-}
-
-/**
- * Correct overflow not hidden in IE 9/10/11.
- */
-
-svg:not(:root) {
-  overflow: hidden;
-}
-
-*{margin:0; padding:0; border:none;}
-
-html{}
-body{
-	color:#fff;
-}
 .content{
 	font-family:"futura_md_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	background-color:#25305d;
@@ -162,7 +119,7 @@ section#wwc-blogposts,section#wwc-promote-work,section#wwc-about,section#wwc-map
 #logo:hover{background-image:url("i/sunlight-foundation-wwc-logo-red-106x120.png");}
 .nav a{
 	font-weight:300;
-	font-size:20px;
+	font-size:0.85em;
 	letter-spacing:2px;
 	font-family:"futura_mdcn_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color:#fff;
