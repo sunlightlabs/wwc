@@ -561,7 +561,7 @@ border:10px solid #9f8b5e;
 -webkit-animation-direction:linear; -moz-animation-direction:linear; -animation-direction:linear;
 }
 
-
+h2 a{height:80px; overflow:hidden;}
 
 
 section h2{
