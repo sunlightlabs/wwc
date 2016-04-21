@@ -51,7 +51,10 @@ h2{
 	font-weight:700;
 	text-transform:uppercase;
 }
-.h2-icon{display:block; padding-left:12%;}
+.h2-icon{
+	display:block; 
+	padding-left:12%;
+}
 h3{
 	margin-bottom:.5em;
 	font-weight:500; 
@@ -233,7 +236,6 @@ text #df5530
 	width:100%;
 	position:relative;
 }
-.content-list:before{}
 .content-list p{
 	margin-left:20%; 
 	margin-right:10%;
@@ -617,7 +619,7 @@ section h2{
     #logo:hover{background-image:url("i/sunlight-foundation-wwc-logo-red-80x90.png");}
 
     nav{
-    	height:700px;
+    	height:200px; /** rough estimate of screen height. **/
     	width:100%;
     	position:fixed;
     	top:0;
@@ -714,7 +716,11 @@ section h2{
 	.content-list p + p{
 		padding-top:1em;
 	}
+	.content-list li{
+		padding-left:1em;
+	}
 	.li-header{
+		padding-left:1em;
 		padding-top:10px;
 	}
 	.li-header:before{
@@ -736,6 +742,9 @@ section h2{
 	}
 	.trigger{
 		padding-left:0;
+	}
+	p.timePosted{
+		margin:.5em 0 0 0;
 	}
 	#wwc-blogposts h2{
 		margin-left:0; 
@@ -761,7 +770,6 @@ section h2{
 	}
 	#wwc-blogposts-all:before{
 		background-image:url("i/arrow-right-bg-white.png");
-
 	}
 	.section-box-feeds{
 		min-height:200px;
@@ -816,23 +824,6 @@ section h2{
 	section#wwc-map div#mapid{
 		height:300px !important;
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	#wwc-about{
 		padding-bottom:0;
 	}
@@ -843,6 +834,8 @@ section h2{
 		font-size:.85em;
 	}
 	footer li a{
+		padding-left:.25em;
+		padding-right:.25em;
 		margin-bottom:10px; 
 		font-size:1em;
 	}
