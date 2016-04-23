@@ -112,6 +112,7 @@ a{
 aside{
 	position:fixed;
 	width:15%;
+	min-width:200px;
 	height:100%; 
 	background-color:#25305d;
 }
@@ -183,8 +184,7 @@ nav button{display:none;} /** hide in desktop **/
 	border-width:26px;
 }
 .maincontent{
-	width:85%;
-	margin-left:15%;
+	margin-left:200px;
 	background-color:#6cc8c5;
 
 }
