@@ -80,10 +80,10 @@ h2{
 	min-height:80px;
 	font-weight:700;
 	text-transform:uppercase;
+	padding-left:30%;
 }
 .h2-icon{
 	display:block; 
-	padding-left:12%;
 }
 h3{
 	margin-bottom:.5em;
@@ -127,19 +127,21 @@ footer{
 section{
 	/** padding-bottom:4em; **/
 	border-bottom:4px solid #fff;
+}
+section h2{
 	background-repeat:no-repeat;
 	background-position:5% 0;
 }
 section#wwc-blogposts,section#wwc-promote-work,section#wwc-about,section#wwc-map{
 	border-bottom:none;
 }
-#wwc-open-data{background-image:url("../img/icons/icon-04a.png");}
-#wwc-define-goals{background-image:url("../img/icons/icon-05a.png");}
-#wwc-engage-stakeholders{background-image:url("../img/icons/icon-03a.png");}
-#wwc-craft-policy{background-image:url("../img/icons/icon-02a.png");}
-#wwc-implement{background-image:url("../img/icons/icon-00a.png");}
-#wwc-promote-work{background-image:url("../img/icons/icon-06a.png");}
-#wwc-about{background-image:url("../img/icons/icon-04a.png");}
+#wwc-open-data h2{background-image:url("../img/icons/icon-04a.png");}
+#wwc-define-goals h2{background-image:url("../img/icons/icon-05a.png");}
+#wwc-engage-stakeholders h2{background-image:url("../img/icons/icon-03a.png");}
+#wwc-craft-policy h2{background-image:url("../img/icons/icon-02a.png");}
+#wwc-implement h2{background-image:url("../img/icons/icon-00a.png");}
+#wwc-promote-work h2{background-image:url("../img/icons/icon-06a.png");}
+#wwc-about h2{background-image:url("../img/icons/icon-04a.png");}
 #wwc-map{
 	padding-left:2em;
 	padding-right:2em;
@@ -282,7 +284,7 @@ footer li a{
 	position:relative;
 }
 .li-header h3{
-	height:58px; /** 8px accounts for border 4px *2 **/
+	/** height:58px; **/ /** 8px accounts for border 4px *2 **/
 	margin-bottom:0;
 }
 .li-header:before{
