@@ -142,6 +142,10 @@ section#wwc-blogposts,section#wwc-promote-work,section#wwc-about,section#wwc-map
 #wwc-implement{background-image:url("../img/icons/icon-00a.png");}
 #wwc-promote-work{background-image:url("../img/icons/icon-06a.png");}
 #wwc-about{background-image:url("../img/icons/icon-04a.png");}
+#wwc-map{
+	padding-left:2em;
+	padding-right:2em;
+}
 #logo{
 	/** 106x120 **/  /** sprite-sf-wwc-logos.png **/
 	background:url("../img/sunlight-foundation-wwc-logo-106x120.png") 50% 50% no-repeat; 
