@@ -21,8 +21,8 @@
         }).addTo(map);
 
         // set up icons for markers
-        var wwcIcon = L.icon({ iconUrl: 'i/pin-wwc.png', iconSize: [24, 38] });
-        var odpIcon = L.icon({ iconUrl: 'i/pin.png', iconSize: [24, 38]});
+        var wwcIcon = L.icon({ iconUrl: 'img/pin-wwc.png', iconSize: [24, 38] });
+        var odpIcon = L.icon({ iconUrl: 'img/pin.png', iconSize: [24, 38]});
 
         // iterate over locations in geoJSON which have cities (previously extracted above) and create markers
         // on the map. The coordinates are flipped because of translation from lat/lng to x/y coordinates.

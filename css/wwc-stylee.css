@@ -30,9 +30,7 @@ font-style:normal;
 }
 
 *{margin:0; padding:0; border:none;}
-
 aside,footer,header,main,nav,section{display:block}
-
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /** 1. Set default font family to sans-serif. 2. Prevent iOS and IE text size adjust after device orientation change, without disabling user zoom. **/
 html {
@@ -112,7 +110,7 @@ a{
 aside{
 	position:fixed;
 	width:15%;
-	min-width:200px;
+	min-width:225px;
 	height:100%; 
 	background-color:#25305d;
 }
@@ -163,7 +161,7 @@ nav button{display:none;} /** hide in desktop **/
 	font-family:"futura_mdcn_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color:#fff;
 	text-transform:uppercase;
-	text-indent:1.5em;
+	text-indent:.75em;
 	line-height:2.5;
 	display:block;
 	position:relative;
@@ -185,10 +183,10 @@ nav button{display:none;} /** hide in desktop **/
 }
 .nav a:hover:before{
 	border-left-color:#181637;
-	border-width:26px;
+	border-width:17px;
 }
 .maincontent{
-	margin-left:200px;
+	margin-left:225px;
 	background-color:#6cc8c5;
 
 }
