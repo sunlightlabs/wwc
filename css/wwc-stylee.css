@@ -362,7 +362,10 @@ footer li a{
 	z-index:100;
 }
 /** you may not need this **/
-.ref-doc-link:hover:before{background-color:#fff; z-index:101;}
+.ref-doc-link:hover:before{
+	background-color:#fff; 
+	z-index:101;
+}
 .ref-doc-google-link{
 	display:block;
 	position:absolute; 
@@ -735,11 +738,6 @@ section h2{
 	nav li{
 		display:none; /** hide on load **/
 	}
-	/** this is no bueno
-	nav.expanded ul:hover{
-		background-image:url("../img/hamburglar-nav-blue-048.png");
-	}
-	**/
 	nav.expanded li{
 		background-color:#25305d;
 		display:block;
@@ -777,11 +775,13 @@ section h2{
 	}
 	p{
 		font-size:.85em; 
-		padding-left:0; padding-right:0;
+		padding-left:0; 
+		padding-right:0;
 	}
 	#see-great-work{
 		width:90%; 
-		font-size:0.75em; margin:2em auto 4em auto;
+		font-size:0.75em; 
+		margin:2em auto 4em auto;
 	}
 	h2{
 		background-position:10%;
