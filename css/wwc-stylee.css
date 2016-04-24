@@ -81,6 +81,8 @@ h2{
 	font-weight:700;
 	text-transform:uppercase;
 	padding-left:30%;
+	background-repeat:no-repeat;
+	background-position:5% 0;
 }
 .h2-icon{
 	display:block; 
@@ -126,10 +128,6 @@ footer{
 section{
 	/** padding-bottom:4em; **/
 	border-bottom:4px solid #fff;
-}
-h2{
-	background-repeat:no-repeat;
-	background-position:5% 0;
 }
 section#wwc-blogposts,section#wwc-promote-work,section#wwc-about,section#wwc-map{
 	border-bottom:none;
@@ -794,15 +792,17 @@ section h2{
 	}
 	.content-list p{
 		line-height:200%;
+		margin-left:0;
+		margin-right:0;
 	}
 	.content-list p + p{
 		padding-top:1em;
 	}
 	.content-list li{
-		padding-left:1em;
+		padding-left:6em;
 	}
 	li.li-header{
-		padding-left:8em;
+		
 		padding-top:10px;
 	}
 	.li-header:before{
@@ -818,6 +818,7 @@ section h2{
 	}
 	.ref-doc-link{
 		margin-top:2em;
+		margin-left:0;
 	}
 	.ref-doc-link span{
 		font-size:.85em;
