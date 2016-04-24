@@ -109,7 +109,7 @@ a{
 aside{
 	position:fixed;
 	min-width:225px;
-	margin-top:-45px;
+	padding-top:-45px;
 	height:100%; 
 	background-color:#25305d;
 }
