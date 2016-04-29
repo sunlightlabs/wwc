@@ -80,12 +80,13 @@ h2{
 	min-height:80px;
 	font-weight:700;
 	text-transform:uppercase;
-	padding-left:30%;
+	padding-left:0;
 	background-repeat:no-repeat;
 	background-position:5% 0;
 }
 .h2-icon{
-	display:block; 
+	display:block;
+	padding-left:150px;
 }
 h3{
 	margin-bottom:.5em;
@@ -110,7 +111,7 @@ a{
 }
 aside{
 	position:fixed;
-	min-width:225px;
+	width:15%;
 	padding-top:-45px;
 	height:100%; 
 	background-color:#25305d;
@@ -186,7 +187,8 @@ nav button{display:none;} /** hide in desktop **/
 	border-width:17px;
 }
 .maincontent{
-	margin-left:225px;
+	margin-left:15%;
+	width:85%;
 	background-color:#6cc8c5;
 
 }
@@ -279,6 +281,7 @@ footer li a{
 }
 .li-header{
 	padding-top:30px;
+	padding-left:20%;
 	position:relative;
 }
 .li-header h3{
@@ -291,7 +294,7 @@ footer li a{
 	border:4px solid #df5530;
 	height:50px;
 	width:50px;
-	left:12%;
+	left:150px;
 	z-index:100;
 }
 .embedded-content{
@@ -786,6 +789,10 @@ section h2{
 	h2{
 		background-position:10%;
 		font-size:1.35em;
+		padding-left:30%;
+	}
+	.h2-icon{
+		padding-left:0;
 	}
 	.content-list{
 		position:relative; 
