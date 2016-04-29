@@ -436,6 +436,7 @@ footer li{
 }
 #wrapper{
 	height:190px;
+	background:url("../img/twitter.png") 100% 100% no-repeat;
 }
 #sftweets{
 	height:100%;
