@@ -533,6 +533,10 @@ span.read-more{}
 #rss-feed-viewer:first-child{
 	margin-left:2%;
 } /** alignment of three in a row **/
+.paddingbox{
+	background-color:#fff;
+	padding-bottom:1em;
+}
 h3.wwc-blog-post-title{
 	float:left; 
 	width:32%;
