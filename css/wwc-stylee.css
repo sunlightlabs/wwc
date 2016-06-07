@@ -146,7 +146,7 @@ section#section-11,section#section-06,section#section-12,section#section-10{
 #section-05 h2{background-image:url("../img/icons/icon-02a.png");}
 #section-06 h2{background-image:url("../img/icons/icon-00a.png");}
 #section-07 h2{background-image:url("../img/icons/icon-06a.png");}
-#section-11{
+#section-10{
 	padding-left:2em;
 	padding-right:2em;
 }
@@ -162,7 +162,7 @@ section#section-11,section#section-06,section#section-12,section#section-10{
 nav button{display:none;} /** hide in desktop **/
 .nav a{
 	font-weight:300;
-	font-size:0.85em;
+	font-size:1.4em;
 	letter-spacing:2px;
 	font-family:"futura_mdcn_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color:#fff;
@@ -259,6 +259,7 @@ footer li a{
 	line-height:2.5;
 	width:40%;
 	text-transform:uppercase;
+	text-decoration:none;
 }
 #see-great-work:before{
 	content:"";
@@ -752,9 +753,7 @@ section h2{
 		background-color:#25305d;
 		background-image:none;
 		padding-top:60px;
-
 	} 
-	
 	nav li{
 		display:none; /** hide on load **/
 	}
@@ -919,10 +918,10 @@ section h2{
 		margin-bottom:30px;
 		background-image:none;
 	}
-	section#wwc-map div#mapid{
+	section#section-10 div#mapid{
 		height:300px !important;
 	}
-	#wwc-about{
+	#section-12{
 		padding-bottom:0;
 	}
 	footer{
