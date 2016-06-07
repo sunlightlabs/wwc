@@ -70,16 +70,9 @@ small{font-size:80%}
 img{border:0}
 svg:not(:root){overflow: hidden}
 
-
-
 .content{
 	font-family:"futura_md_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	background-color:#25305d;
-	/** background-color:#e7ede4; **/
-	/** background-color:#000; **/
-	/** put this into place prior to going live
-	background-color:#e7ede4; background-color:#25305d; background-color:#6cc8c5;
-	**/
 }
 h1{
 	letter-spacing:3px; font-weight:500;
@@ -142,7 +135,6 @@ footer{
 	color:#df5530;
 }
 section{
-	/** padding-bottom:4em; **/
 	border-bottom:4px solid #fff;
 }
 section#section-11,section#section-06,section#section-12,section#section-10{
@@ -180,6 +172,7 @@ nav button{display:none;} /** hide in desktop **/
 	display:block;
 	position:relative;
 	z-index:200;
+	text-decoration:none;
 }
 .nav a:before{
 	left:100%; 
@@ -206,6 +199,7 @@ nav button{display:none;} /** hide in desktop **/
 	background-color:#6cc8c5;
 
 }
+h2 a{text-decoration:none;}
 /** totally fix this with this sprite...unnecessary images = more http requests **/
 .wwc-logo-headliner{
 	/** width for containment....may not be needed... **/
@@ -313,7 +307,7 @@ footer li a{
 	left:170px; /** equals as much as h2-icon padding **/
 	z-index:100;
 }
-.li-no-header p{
+.li-no-header p,.li-no-header h3{
 	padding-left:170px;
 	margin-left:0;
 }
@@ -546,9 +540,7 @@ span[data-scribe="element:screen_name"]{}
 	display:none;
 }
 
-
 /** feed display **/
-span.read-more{}
 #rss-feed-viewer{
 	padding-top:2em;
 	padding-bottom:2em;
