@@ -122,6 +122,7 @@ ul{
 a{
 	text-decoration:none;
 	color:#fff;
+	text-decoration:underline;
 }
 aside{
 	position:fixed;
@@ -137,24 +138,23 @@ header{
 footer{
 	text-align:center;
 }
-#wwc-about .content-list a{
+#section-12 .content-list a{
 	color:#df5530;
 }
 section{
 	/** padding-bottom:4em; **/
 	border-bottom:4px solid #fff;
 }
-section#wwc-blogposts,section#wwc-promote-work,section#wwc-about,section#wwc-map{
+section#section-11,section#section-06,section#section-12,section#section-10{
 	border-bottom:none;
 }
-#wwc-open-data h2{background-image:url("../img/icons/icon-04a.png");}
-#wwc-define-goals h2{background-image:url("../img/icons/icon-05a.png");}
-#wwc-engage-stakeholders h2{background-image:url("../img/icons/icon-03a.png");}
-#wwc-craft-policy h2{background-image:url("../img/icons/icon-02a.png");}
-#wwc-implement h2{background-image:url("../img/icons/icon-00a.png");}
-#wwc-promote-work h2{background-image:url("../img/icons/icon-06a.png");}
-#wwc-about h2{background-image:url("../img/icons/icon-04a.png");}
-#wwc-map{
+#section-02 h2,#section-08 h2{background-image:url("../img/icons/icon-04a.png");}
+#section-03 h2,#section-09 h2{background-image:url("../img/icons/icon-05a.png");}
+#section-04 h2{background-image:url("../img/icons/icon-03a.png");}
+#section-05 h2{background-image:url("../img/icons/icon-02a.png");}
+#section-06 h2{background-image:url("../img/icons/icon-00a.png");}
+#section-07 h2{background-image:url("../img/icons/icon-06a.png");}
+#section-11{
 	padding-left:2em;
 	padding-right:2em;
 }
@@ -250,8 +250,7 @@ footer li a{
 	clear:right; 
 	float:none;
 }
-iframe{}
-#wwc-first{
+#section-01{
 	text-align:center;
 	background:url("../img/bg-section-first.png") 50% 0 no-repeat;
 	padding-top:14em;
@@ -298,6 +297,9 @@ iframe{}
 	padding-left:20%;
 	position:relative;
 }
+.li-header-h3{
+	padding-left:20%;
+}
 .li-header h3{
 	/** height:58px; **/ /** 8px accounts for border 4px *2 **/
 	margin-bottom:0;
@@ -310,6 +312,10 @@ iframe{}
 	width:50px;
 	left:170px; /** equals as much as h2-icon padding **/
 	z-index:100;
+}
+.li-no-header p{
+	padding-left:170px;
+	margin-left:0;
 }
 .embedded-content{
 	position:relative;
@@ -345,7 +351,6 @@ iframe{}
 	text-align:left;
 	margin-bottom:1em;
 }
-
 .embedded-content-list{
 	margin-left:22.5%;
 	text-align:left;
@@ -399,7 +404,6 @@ iframe{}
 	text-transform:uppercase;
 	color:#df5530;
 }
-
 /** both will need :before + content:""; for adding arrow icons **/
 footer li a{
 	margin-bottom:30px;
@@ -416,7 +420,7 @@ footer li{
 	margin-bottom:1em; 
 	font-size:1em;
 }
-#wwc-blogposts h2{
+#section-11 h2{
 	background-color:#25305d; 
 	padding-left:1em;
 }
