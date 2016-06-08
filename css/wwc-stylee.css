@@ -104,7 +104,7 @@ h3{
 }
 p{
 	font-family:"futura_md_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size:2em; 
+	font-size:1.5em; 
 	font-weight:300;
 	padding-top:.5em;
 	margin-bottom:.5em;
@@ -176,7 +176,7 @@ nav button{display:none;} /** hide in desktop **/
 }
 .nav a:before{
 	left:100%; 
-	z-index:100;
+	z-index:100000;
 	top:0;
 	position:absolute;
 	border:solid transparent;
@@ -831,6 +831,10 @@ section h2{
 		left:12.5%; 
 		height:25px; 
 		width:25px;
+	}
+	.li-no-header p,.li-no-header h3{
+		padding-left:0;
+		margin-left:0;
 	}
 	.li-header h3{
 		height:auto;
