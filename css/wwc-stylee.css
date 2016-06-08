@@ -191,7 +191,7 @@ nav button{display:none;} /** hide in desktop **/
 }
 .nav a:hover:before{
 	border-left-color:#181637;
-	border-width:17px;
+	border-width:28px;
 }
 .maincontent{
 	margin-left:250px;
