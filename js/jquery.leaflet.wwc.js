@@ -13,7 +13,7 @@
         });
 
         // set up map
-        var map = L.map('mapid').setView([38, -97], 5);
+        var map = L.map('mapid').setView([38, -97], 4);
         var mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
         L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           attribution: '&copy; ' + mapLink + ' Contributors',
