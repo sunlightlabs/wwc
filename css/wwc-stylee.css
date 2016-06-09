@@ -69,13 +69,13 @@ h1{font-size:4em}
 small{font-size:80%}
 img{border:0}
 svg:not(:root){overflow: hidden}
-
 .content{
 	font-family:"futura_md_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	background-color:#25305d;
 }
 h1{
-	letter-spacing:3px; font-weight:500;
+	letter-spacing:3px; 
+	font-weight:500;
 	font-family:"futura_mdcn_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 h2,h3,h4,h5,h6{font-family:"futura_mdcn_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;}
@@ -93,7 +93,7 @@ h2{
 }
 .h2-icon{
 	display:block;
-	padding-left:170px;
+	padding-left:180px;
 }
 h3{
 	margin-bottom:.5em;
@@ -132,7 +132,7 @@ footer{
 	text-align:center;
 }
 #section-12 .content-list a{
-	color:#df5530;
+	color:#fff;
 }
 section{
 	border-bottom:4px solid #fff;
@@ -151,13 +151,11 @@ section#section-11,section#section-06,section#section-12,section#section-10{
 	padding-right:2em;
 }
 #logo{
-	/** 106x120 **/  /** sprite-sf-wwc-logos.png **/
 	background:url("../img/sunlight-foundation-wwc-logo-106x120.png") 50% 50% no-repeat; 
 	display:block; 
 	text-indent:-9999px;
 	height:200px;
 }
-/** this isn't supposed to be on hover, supposed to be when user is at top of document...make another sprite and fix this!!! **/
 #logo:hover{background-image:url("../img/sunlight-foundation-wwc-logo-red-106x120.png");}
 nav button{display:none;} /** hide in desktop **/
 .nav a{
@@ -227,8 +225,6 @@ footer li a{
 	color:#df5530; 
 	font-size:2em;
 }
-
-/** utility classes **/
 .clearboth{
 	clear:both; 
 	float:none;
@@ -281,16 +277,16 @@ footer li a{
 	position:relative;
 }
 .content-list p{
-	margin-left:20%; 
-	margin-right:10%;
+	margin-left:250px; 
+	margin-right:100px;
 }
 .li-header{
 	padding-top:30px;
-	padding-left:20%;
+	padding-left:250px;
 	position:relative;
 }
 .li-header-h3{
-	padding-left:20%;
+	padding-left:250px;
 }
 .li-header h3{
 	/** height:58px; **/ /** 8px accounts for border 4px *2 **/
@@ -320,7 +316,7 @@ footer li a{
 	text-align:center;
 }
 .embedded-content-gutter{
-	margin-left:20%;
+	margin-left:250px;
 }
 .embedded-content:before{
 	top:0;
@@ -344,13 +340,13 @@ footer li a{
 	margin-bottom:1em;
 }
 .embedded-content-list{
-	margin-left:22.5%;
+	margin-left:250px;
 	text-align:left;
 }
 .embedded-content-list li{
 	padding-bottom:1em;
 }
-.embedded-content-list a{
+.embedded-content-list .ref{
 	color:#df5530;
 	text-transform:uppercase;
 	font-weight:700;
@@ -360,7 +356,7 @@ footer li a{
 	height:20px;
 	line-height:20px;
 }
-.embedded-content-list a:before{
+.embedded-content-list .ref:before{
 	content:"";
 	position:absolute;
 	right:0;
@@ -622,7 +618,7 @@ h1.map-pin-h1{
 	color:#df5530; 
 	font-size:1.5em;
 }
-#section-12 p a{color:#fff;}
+
 div.blogposts-box h2{margin-top:0;}
 /** css animations/transformations **/
 /** :target animation of logo **/
@@ -820,7 +816,7 @@ section h2{
 	.content-list p + p{
 		padding-top:1em;
 	}
-	.content-list li{
+	.content-list li.gutter{
 		padding-left:6em;
 	}
 	li.li-header{
@@ -944,6 +940,20 @@ section h2{
 		font-size:1em;
 	}
 	.testclass{background-color:#fff !important;}
+	.ref-list{padding-right:10px;}
+	.embedded-content{
+		padding-left:6em; overflow:hidden;
+	}
+	.embedded-content a{display:block;}
+	.embedded-content-gutter{
+		margin-left:0;
+	}
+	.embedded-content-list{
+		margin-left:0;
+		text-align:left;
+	}
+	h2{line-height:1.5;}
+	.content-list p{margin-right:10px}
 
 
 }
