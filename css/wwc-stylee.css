@@ -851,6 +851,7 @@ section h2{
 	}
 	#wwc-blogposts,.blogposts-box{
 		position:relative;
+		background-color:#fff;
 	}
 	.blogposts-box{
 		padding-bottom:5em;
@@ -859,7 +860,7 @@ section h2{
 		float:none;
 		clear:left;
 		position:absolute; 
-		bottom:1.75em;
+		bottom:10px;
 		left:120px;
 		font-size:1em;
 	}
@@ -942,9 +943,8 @@ section h2{
 	.testclass{background-color:#fff !important;}
 	.ref-list{padding-right:10px;}
 	.embedded-content{
-		padding-left:6em; overflow:hidden;
+		padding-left:10%; padding-right:10%;
 	}
-	.embedded-content a{display:block;}
 	.embedded-content-gutter{
 		margin-left:0;
 	}
@@ -954,6 +954,9 @@ section h2{
 	}
 	h2{line-height:1.5;}
 	.content-list p{margin-right:10px}
+	.embedded-content-list .ref{
+		font-size:10px;
+	}
 
 
 }
