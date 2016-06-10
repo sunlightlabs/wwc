@@ -945,6 +945,7 @@ section h2{
 	.embedded-content{
 		padding-left:10%; padding-right:10%;
 	}
+	.embedded-content-list a.ref{font-weight:300;}
 	.embedded-content-gutter{
 		margin-left:0;
 	}
