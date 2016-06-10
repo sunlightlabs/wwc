@@ -861,7 +861,7 @@ section h2{
 		clear:left;
 		position:absolute; 
 		bottom:10px;
-		left:120px;
+		left:30%;
 		font-size:1em;
 	}
 	#wwc-blogposts-all:before{
@@ -958,6 +958,8 @@ section h2{
 	.embedded-content-list .ref{
 		font-size:10px;
 	}
+	.blogposts-box h2 a{line-height:80px;}
+
 
 
 }
