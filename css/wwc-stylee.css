@@ -836,7 +836,7 @@ section h2{
 	.li-header h3{
 		height:auto;
 		font-size:1.15em;
-		line-height:250%;
+		line-height:1.5;
 	}
 	p.timePosted{
 		margin:.5em 0 0 0;
@@ -953,7 +953,8 @@ section h2{
 		margin-left:0;
 		text-align:left;
 	}
-	h2{line-height:1.5;}
+	h2{line-height:auto;}
+	h2 a{line-height:1.5;}
 	.content-list p{margin-right:10px}
 	.embedded-content-list .ref{
 		font-size:10px;
