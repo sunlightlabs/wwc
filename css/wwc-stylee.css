@@ -169,12 +169,11 @@ nav button{display:none;} /** hide in desktop **/
 	line-height:2.5;
 	display:block;
 	position:relative;
-	z-index:200;
+	z-index:20000;
 	text-decoration:none;
 }
 .nav a:before{
 	left:100%; 
-	z-index:100000;
 	top:0;
 	position:absolute;
 	border:solid transparent;
@@ -182,14 +181,19 @@ nav button{display:none;} /** hide in desktop **/
 	height:0;
 	width:0;
 	pointer-events:none;
+	z-index:20000;
+
 }
+ul.content-list li.li-ec{position:relative; z-index:10;}
 .nav a:hover{
 	background-color:#181637;
 	color:#df5530;
+	z-index:100000;
 }
 .nav a:hover:before{
 	border-left-color:#181637;
 	border-width:28px;
+	z-index:100000;
 }
 .maincontent{
 	margin-left:250px;
@@ -314,6 +318,7 @@ footer li a{
 	padding-bottom:3.5em;
 	width:100%;
 	text-align:center;
+	z-index:200;
 }
 .embedded-content-gutter{
 	margin-left:250px;
