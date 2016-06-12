@@ -117,6 +117,7 @@ a{
 	color:#fff;
 	text-decoration:underline;
 }
+nav,nav ul{z-index:100000; position:relative;}
 aside{
 	position:fixed;
 	width:250px;
@@ -172,7 +173,7 @@ nav button{display:none;} /** hide in desktop **/
 	z-index:20000;
 	text-decoration:none;
 }
-.nav a:before{
+.nav a:before,.nav a:after{
 	left:100%; 
 	top:0;
 	position:absolute;
@@ -190,7 +191,7 @@ ul.content-list li.li-ec{position:relative; z-index:10;}
 	color:#df5530;
 	z-index:100000;
 }
-.nav a:hover:before{
+.nav a:hover:before,.nav a:hover:after{
 	border-left-color:#181637;
 	border-width:28px;
 	z-index:100000;
@@ -356,26 +357,31 @@ li.li-ec{margin-top:60px;}
 	color:#df5530;
 	text-transform:uppercase;
 	font-weight:700;
-	position:relative;
 	font-family:"futura_md_btbold", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	padding-right:25px;
-	height:20px;
-	line-height:20px;
-}
+	line-height:1;
+	display:block;
+} /**
 .embedded-content-list .ref:before{
 	content:"";
 	position:absolute;
 	right:0;
-	height:20px;
+	height:100%;
 	width:20px;
 	background:url("../img/arrow-right-redx020.png") 0 0 no-repeat;
 	z-index:100;
-}
+} **/
 .embedded-content-list a:hover{
 	color:#511f11;
 }
+/**
 .embedded-content-list a:hover:before{
 	background:url("../img/arrow-right-dark-redx020.png") 0 0 no-repeat;
+} **/
+.ref-link{
+	vertical-align:middle;
+}
+.span-ref-link{
+	width:20px; height:20px; background-color:#000;
 }
 .embedded-content-box{
 	padding-top:1em;

@@ -11,6 +11,15 @@ $(document).ready(function()
       $("head").append(s);
     }
 
+    $(".ref").hover(
+      function () {
+        $(this).find('.ref-link').attr('src', '../img/arrow-right-dark-redx020.png');
+      },
+      function () {
+        $(this).find('.ref-link').attr('src', '../img/arrow-right-redx020.png');
+      }
+    );
+
 	// mobile nav
   // expand mobile nav on click of hamburger menu icon
 	$('#mobiletoggle').click(function() {
