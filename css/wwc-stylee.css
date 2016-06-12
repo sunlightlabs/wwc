@@ -632,48 +632,65 @@ h1.map-pin-h1{
 }
 
 div.blogposts-box h2{margin-top:0;}
-/** css animations/transformations **/
-/** :target animation of logo **/
-
-/**
-@-webkit-keyframes target {
-  from { background:#ffffff; }
-  50% { background:#ffffd3; }
-  to { background:#ffffff; }
-}
-#logo:target{
-border:10px solid #9f8b5e;    
--webkit-animation:target .5s linear; -moz-animation:target .5s linear; -animation:target .5s linear; 
--webkit-animation-duration:.5s; -moz-animation-duration:.5s; -animation-duration:.5s;
--webkit-animation-iteration-count:1; -moz-animation-iteration-count:1; -animation-iteration-count:1;
--webkit-animation-direction:linear; -moz-animation-direction:linear; -animation-direction:linear;
-}
-
-h2 a{height:80px; overflow:hidden;}
-
-
-section h2{
--webkit-transition: color 0.5s ease;
-    -moz-transition: color 0.5s ease;
-    -o-transition: color 0.5s ease;
-    -ms-transition: color 0.5s ease;
-    transition: color 0.5s ease;
-}
-section h2{
-
-	**/
-  /**
-    font-size: 50px;
-    text-decoration: underline;
-    color: #37aee4;
- **/ /** }
-**/
-
-
-
 /**  media queries **/
+@media screen and (max-width: 900px) {
+	.h2-icon{padding-left:100px;}
+	.li-header{padding-left:100px;}
+	.li-header:before{left:5%;}
+	.content-list p{
+    	margin-left:100px;
+    	margin-right:50px;
+    }
+    .embedded-content:before{left:100px;}
+    .embedded-content-list{margin-left:100px;}
+    .embedded-content-gutter{margin-left:100px;}
+    .li-no-header p,.li-no-header h3{padding-left:0;}
+    #section-11 h2{
+    	padding-left:0; 
+    	font-size:2em;
+    }
+    #wrapper{height:220px;}
+    .wwc-logo-headliner{
+    	height:332px;
+    	background:none;
+    }
+    #wwc-logo-wwc,#wwc-logo-sf{
+    	width:100%; 
+    	background-position:50% 0;
+    }
+    #wwc-logo-sf{margin-left:auto;}
+    footer{padding-bottom:1em}
+}
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 800px) {
+    #section-11 h2{font-size:1.5em;}
+    #rss-feed-viewer {min-height:200px;}
+    #wrapper{height:240px;}
+
+}
+@media screen and (max-width: 700px) {
+    #section-11 h2{font-size:1.25em;}
+    #wwc-blogposts-all {font-size:20px;}
+    #rss-feed-viewer{min-height:230px;}
+    #wrapper{height:270px;}
+
+}
+@media screen and (max-width: 650px) {
+    #wwc-blogposts-all {font-size:16px;}
+    #rss-feed-viewer{min-height:250px;}
+    #wrapper{height:280px;}
+    #wwc-logo-wwc{background-image:url("../img/what-works-cities-logotype-320x83.png");}
+}
+@media screen and (max-width: 600px) {
+	#section-11 h2{font-size:1em;}
+    #wwc-blogposts-all {font-size:14px;}
+    h3.wwc-blog-post-title{font-size:1em;}
+    #rss-feed-viewer{min-height:200px;}
+    #wrapper{height:310px;}
+    #wwc-logo-wwc{background-image:url("../img/what-works-cities-logotype-320x83.png");}
+    .wwc-blogposts-read-more span:before{background-position:0 0;}
+}
+@media screen and (max-width: 550px) {
 	section{
 		padding-left:0; 
 		margin-left:0; 
