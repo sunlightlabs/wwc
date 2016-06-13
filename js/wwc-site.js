@@ -11,6 +11,7 @@ $(document).ready(function()
       $("head").append(s);
     }
 
+    // change icon image aka color on hover - using jquery bc rwd is not playing nice aka i suck
     $(".ref").hover(
       function () {
         $(this).find('.ref-link').attr('src', '../img/arrow-right-dark-redx020.png');
