@@ -64,6 +64,7 @@ body:before{
 /** Remove the gray background color from active links in IE 10. **/
 a{background-color:transparent}
 a:active,a:hover{outline:0}
+p a:hover,p a:active,p a:focus{color:#df5530;}
 b,strong{font-weight: bold;}
 h1{font-size:4em}
 small{font-size:80%}
