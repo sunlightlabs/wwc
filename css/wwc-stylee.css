@@ -958,7 +958,7 @@ div.blogposts-box h2{margin-top:0;}
 		font-size:1em;
 	}
 	.testclass{background-color:#fff !important;}
-	.ref-list{padding-right:10px;}
+	/** .ref-list{padding-right:10px;} **/
 	.embedded-content{
 		padding-left:10%; padding-right:10%;
 	}
