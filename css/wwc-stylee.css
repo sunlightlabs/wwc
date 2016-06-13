@@ -124,6 +124,7 @@ aside{
 	padding-top:-45px;
 	height:100%; 
 	background-color:#25305d;
+	z-index:10000;
 }
 header{
 	background-color:#e7ede4; 
@@ -201,7 +202,10 @@ ul.content-list li.li-ec{position:relative; z-index:10;}
 	background-color:#6cc8c5;
 
 }
-h2 a{text-decoration:none;}
+h2 a{
+	text-decoration:none; 
+	outline:none;
+}
 .wwc-logo-headliner{
 	height:116px;
 	max-width:700px;
@@ -360,28 +364,12 @@ li.li-ec{margin-top:60px;}
 	font-family:"futura_md_btbold", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	line-height:1;
 	display:block;
-} /**
-.embedded-content-list .ref:before{
-	content:"";
-	position:absolute;
-	right:0;
-	height:100%;
-	width:20px;
-	background:url("../img/arrow-right-redx020.png") 0 0 no-repeat;
-	z-index:100;
-} **/
+}
 .embedded-content-list a:hover{
 	color:#511f11;
 }
-/**
-.embedded-content-list a:hover:before{
-	background:url("../img/arrow-right-dark-redx020.png") 0 0 no-repeat;
-} **/
 .ref-link{
 	vertical-align:middle;
-}
-.span-ref-link{
-	width:20px; height:20px; background-color:#000;
 }
 .embedded-content-box{
 	padding-top:1em;
@@ -516,7 +504,6 @@ p.timePosted{
 #sftweets ul li.tweet{}
 #sftweets ul li.tweet a{}
 #sftweets ul li.tweet span{}
-
 #sftweets a{
 	color:#fff; 
 	text-decoration:none;
