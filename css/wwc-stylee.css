@@ -618,9 +618,13 @@ h1.map-pin-h1{
 	color:#df5530; 
 	font-size:1.5em;
 }
-
 div.blogposts-box h2{margin-top:0;}
+
 /**  media queries **/
+@media screen and (max-width: 1000px) {
+    #section-11 h2{font-size:1.5em;}
+    #wwc-blogposts-all{font-size:20px;}
+}
 @media screen and (max-width: 900px) {
 	.h2-icon{padding-left:100px;}
 	.li-header{padding-left:100px;}
@@ -649,29 +653,28 @@ div.blogposts-box h2{margin-top:0;}
     #wwc-logo-sf{margin-left:auto;}
     footer{padding-bottom:1em}
 }
-
 @media screen and (max-width: 800px) {
     #section-11 h2{font-size:1.5em;}
-    #rss-feed-viewer {min-height:200px;}
+    #rss-feed-viewer{min-height:200px;}
     #wrapper{height:240px;}
 
 }
 @media screen and (max-width: 700px) {
     #section-11 h2{font-size:1.25em;}
-    #wwc-blogposts-all {font-size:20px;}
+    #wwc-blogposts-all{font-size:20px;}
     #rss-feed-viewer{min-height:230px;}
     #wrapper{height:270px;}
 
 }
 @media screen and (max-width: 650px) {
-    #wwc-blogposts-all {font-size:16px;}
+    #wwc-blogposts-all{font-size:16px;}
     #rss-feed-viewer{min-height:250px;}
     #wrapper{height:280px;}
     #wwc-logo-wwc{background-image:url("../img/what-works-cities-logotype-320x83.png");}
 }
 @media screen and (max-width: 600px) {
 	#section-11 h2{font-size:1em;}
-    #wwc-blogposts-all {font-size:14px;}
+    #wwc-blogposts-all{font-size:14px;}
     h3.wwc-blog-post-title{font-size:1em;}
     #rss-feed-viewer{min-height:200px;}
     #wrapper{height:310px;}
@@ -690,12 +693,8 @@ div.blogposts-box h2{margin-top:0;}
 		width:100%;
 		height:80px;
 	}
-	aside a{
-		text-align:center;
-	}
-	h1{
-		margin:0;
-	}
+	aside a{text-align:center;}
+	h1{margin:0;}
 	header,.branding-bar{
 		max-height:45px; 
 		overflow:hidden; 
@@ -704,7 +703,6 @@ div.blogposts-box h2{margin-top:0;}
     h1{
     	position:relative;
     } /** to get point down from top...this is not ideal...do not push to production **/
-
     #logo{
     	height:90px;
     	z-index:100; 
@@ -717,9 +715,7 @@ div.blogposts-box h2{margin-top:0;}
     	background-image:url("../img/sunlight-foundation-wwc-logo-80x90.png");
     	z-index:100;  /** so you can click through **/
     }
-    #logo:hover{
-    	background-image:url("../img/sunlight-foundation-wwc-logo-red-80x90.png");
-    }
+    #logo:hover{background-image:url("../img/sunlight-foundation-wwc-logo-red-80x90.png");}
     nav{
     	height:200px; /** rough estimate of screen height. **/
     	width:100%;
@@ -748,11 +744,9 @@ div.blogposts-box h2{margin-top:0;}
 		z-index:200; /** so you can click through **/
 		background:url("../img/hamburglar-nav-white-048.png") 0 0 no-repeat;
     }
-    nav.expanded button{
-    	background:url("../img/bg-nav-rwd.png") 0 0 repeat;
-    }
-    nav button:focus{ /** default webkit outline:-webkit-focus-ring-color auto 5px **/
-    	outline:none;
+    nav.expanded button{background:url("../img/bg-nav-rwd.png") 0 0 repeat;}
+    nav button:focus{
+    	outline:none; /** default webkit outline:-webkit-focus-ring-color auto 5px **/
     }
 	nav.expanded ul{
 		outline:none;
@@ -774,12 +768,8 @@ div.blogposts-box h2{margin-top:0;}
 		display:block;
 		width:100%;
 	}
-	nav.expanded a{
-		text-align:left;
-	}
-	.nav a:before{
-		border:none;
-	}
+	nav.expanded a{text-align:left;}
+	.nav a:before{border:none;}
 	nav.expanded #mobiletoggle{
 		display:block;
 		cursor:pointer;
@@ -819,27 +809,16 @@ div.blogposts-box h2{margin-top:0;}
 		font-size:1.35em;
 		padding-left:30%;
 	}
-	.h2-icon{
-		padding-left:0;
-	}
-	.content-list{
-		position:relative; 
-	}
+	.h2-icon{padding-left:0;}
+	.content-list{position:relative;}
 	.content-list p{
 		line-height:200%;
 		margin-left:0;
 		margin-right:0;
 	}
-	.content-list p + p{
-		padding-top:1em;
-	}
-	.content-list li.gutter{
-		padding-left:6em;
-	}
-	li.li-header{
-		
-		padding-top:10px;
-	}
+	.content-list p + p{padding-top:1em;}
+	.content-list li.gutter{padding-left:6em;}
+	li.li-header{padding-top:10px;}
 	.li-header:before{
 		top:15px; 
 		left:12.5%; 
@@ -855,9 +834,7 @@ div.blogposts-box h2{margin-top:0;}
 		font-size:1.15em;
 		line-height:1.5;
 	}
-	p.timePosted{
-		margin:.5em 0 0 0;
-	}
+	p.timePosted{margin:.5em 0 0 0;}
 	#wwc-blogposts h2{
 		margin-left:0; 
 		text-indent:0;
@@ -870,9 +847,7 @@ div.blogposts-box h2{margin-top:0;}
 		position:relative;
 		background-color:#fff;
 	}
-	.blogposts-box{
-		padding-bottom:5em;
-	}
+	.blogposts-box{padding-bottom:5em;}
 	#wwc-blogposts-all{
 		float:none;
 		clear:left;
@@ -881,20 +856,14 @@ div.blogposts-box h2{margin-top:0;}
 		left:30%;
 		font-size:1em;
 	}
-	#wwc-blogposts-all:before{
-		background-image:url("../img/arrow-right-bg-white.png");
-	}
-	.section-box-feeds{
-		min-height:200px;
-	}
+	#wwc-blogposts-all:before{background-image:url("../img/arrow-right-bg-white.png");}
+	.section-box-feeds{min-height:200px;}
 	.section-box-feeds h3{
 		float:none; 
 		clear:left; 
 		width:100%	
 	}
-	#wwc-blogposts{
-		background-color:#fff;
-	}
+	#wwc-blogposts{background-color:#fff;}
 	#rss-feed-viewer{
 		padding-top:1em;
 		padding-bottom:1em;
@@ -907,10 +876,7 @@ div.blogposts-box h2{margin-top:0;}
 		font-size:1em;
 		font-weight:700;
 	}
-	#wwc-about .content-list:before{
-		border-color:transparent;
-	}
-
+	#wwc-about .content-list:before{border-color:transparent;}
 	.wwc-logo{
 		height:56px;
 		float:none;
@@ -935,18 +901,10 @@ div.blogposts-box h2{margin-top:0;}
 		margin-bottom:30px;
 		background-image:none;
 	}
-	section#section-10 div#mapid{
-		height:300px !important;
-	}
-	#section-12{
-		padding-bottom:0;
-	}
-	footer{
-		padding-bottom:3em;
-	}
-	footer li em{
-		font-size:.85em;
-	}
+	section#section-10 div#mapid{height:300px !important;}
+	#section-12{padding-bottom:0;}
+	footer{padding-bottom:3em;}
+	footer li em{font-size:.85em;}
 	footer li a{
 		padding-left:.25em;
 		padding-right:.25em;
@@ -960,12 +918,11 @@ div.blogposts-box h2{margin-top:0;}
 	.testclass{background-color:#fff !important;}
 	/** .ref-list{padding-right:10px;} **/
 	.embedded-content{
-		padding-left:10%; padding-right:10%;
+		padding-left:10%; 
+		padding-right:10%;
 	}
 	.embedded-content-list a.ref{font-weight:300;}
-	.embedded-content-gutter{
-		margin-left:0;
-	}
+	.embedded-content-gutter{margin-left:0;}
 	.embedded-content-list{
 		margin-left:0;
 		text-align:left;
@@ -973,11 +930,7 @@ div.blogposts-box h2{margin-top:0;}
 	h2{line-height:auto;}
 	h2 a{line-height:1.5;}
 	.content-list p{margin-right:10px}
-	.embedded-content-list .ref{
-		font-size:10px;
-	}
+	.embedded-content-list .ref{font-size:10px;}
 	.blogposts-box h2 a{line-height:80px;}
 	li.li-ec{margin-top:0}
-
-
 }
