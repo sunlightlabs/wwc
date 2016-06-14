@@ -1,1 +1,36 @@
-right by Marc Grützmacher from the Noun Project
+/* http://whatworkscities.sunlightfoundation.com What Works Cities - Sunlight Foundation was created by the Sunlight Foundation, an organization making government more Accountable and Transparent via Openness, Open Data, Open Government, Civic Tech, Policy Analysis and Data Journalism */
+
+/* TEAM */
+Open Data Project Lead: Stephen Larrick
+Contact: slarrick [at] sunlightfoundation.com
+Sunlight Foundation: http://sunlightfoundation.com/team/slarrick/
+Twitter: http://twitter.com/slarrick
+GitHub: https://github.com/slarrick
+
+Design Advisor: Caitlin Weber
+Contact: caitlin.weber [at] gmail.com
+Sunlight Foundation: http://sunlightfoundation.com/team/cweber/
+Twitter: https://twitter.com/caitlinweber
+GitHub: https://github.com/cweber
+Site: http://www.caitlinweber.com/
+
+Software Developer: J. Albert Bowden II
+Contact: albert [at] sunlightfoundation.com
+Sunlight Foundation: http://sunlightfoundation.com/team/abowden/
+Twitter: http://twitter.com/jalbertbowdenii
+GitHub: https://github.com/jalbertbowden
+Site: http://bowdenweb.com/
+
+/* THANKS */
+Name: What Work Cities
+Contribution: Design Assets
+URL: http://whatworkscities.bloomberg.org/
+Name: Marc Grützmacher
+Conribution: Right Icon
+URL: https://thenounproject.com/term/right/182528/
+                          
+/* SITE */                         
+Last update: 2016/06                        
+Standards: HTML5, CSS3, JavaScript, GeoJSON, RSS
+Components: jQuery, jQuery.jFeed.pack, jQuery.getFeed.js, Leaflet.js, Twitter-Post-Fetcher, BrandingBar, SF-Icons
+Software: Web, Sublime Text, OS X, Firefox, Photoshop, Illustrator, GitHub, Git, Google Drive, Google Docs, Google Spreadsheets
