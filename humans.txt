@@ -1,4 +1,4 @@
-/* http://whatworkscities.sunlightfoundation.com What Works Cities - Sunlight Foundation was created by the Sunlight Foundation, an organization making government more Accountable and Transparent via Openness, Open Data, Open Government, Civic Tech, Policy Analysis and Data Journalism */
+/* Public Policy For Public Data - An Actionable Guide to Crafting and Enacting Open Data Policy - was created by the Sunlight Foundation, an organization making government transparent and accountable through data, tools, policy and journalism. */
 
 /* TEAM */
 Open Data Project Lead: Stephen Larrick
