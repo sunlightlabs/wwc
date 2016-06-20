@@ -94,6 +94,7 @@ h1{
 }
 h2,h3,h4,h5,h6{font-family:"futura_mdcn_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;}
 h2{
+	font-family:"futura_md_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin-top:1.5em;
 	font-size:2.5em;
 	line-height:80px;
@@ -179,8 +180,9 @@ nav button{display:none;} /** hide in desktop **/
 	font-weight:300;
 	/** font-size:1.4em; **/
 	font-size:21px;
-	letter-spacing:2px;
+	/** letter-spacing:-2px; **/
 	font-family:"futura_mdcn_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	/** font-family:"futura_md_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; **/
 	color:#fff;
 	text-transform:uppercase;
 	text-indent:.75em;
