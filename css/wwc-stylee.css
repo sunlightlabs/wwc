@@ -777,7 +777,7 @@ div.blogposts-box h2{margin-top:0;}
 		height:30px;
 		position:absolute;
 		top:30px;
-		z-index:220;
+		z-index:220000;
 		right:50px;
 		background:url("../img/button-close-nav-rwd.png") 0 0 no-repeat;
 	}
