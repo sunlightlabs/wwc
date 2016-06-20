@@ -176,7 +176,8 @@ section#section-11,section#section-06,section#section-12,section#section-10{
 nav button{display:none;} /** hide in desktop **/
 .nav a{
 	font-weight:300;
-	font-size:1.4em;
+	/** font-size:1.4em; **/
+	font-size:21px;
 	letter-spacing:2px;
 	font-family:"futura_mdcn_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color:#fff;
