@@ -192,6 +192,11 @@ nav button{display:none;} /** hide in desktop **/
 	z-index:20000;
 	text-decoration:none;
 }
+.nav a.nav-style{
+	color:#df5530;
+}
+.nav a.nav-style:hover{color:#fff;}
+
 .nav a:before,.nav a:after{
 	left:100%; 
 	top:0;

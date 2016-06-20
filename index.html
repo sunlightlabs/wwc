@@ -3,36 +3,52 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- correct ?? <meta name="google-site-verification" content="NlacukJ732mOgu29HDKLFLpfIailVIsd4YsnFMyAcd4" /> -->
+    <!-- correct ?? <meta name="readability-verification" content="9jx4vULkHqF9P2QvTEyg5HEqMEFtXSFEaGsCZ8b8" /> -->
     <title>Public Policy For Public Data - An Actionable Guide to Crafting and Enacting Open Data Policy</title>
+    <link rel="stylesheet" type="text/css" href="css/wwc-stylee.css" />
+    <link rel="stylesheet" type="text/css" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css" />
+    <link rel="stylesheet" type="text/css" href="//d3d1m61yehgiwz.cloudfront.net/brandingbar/0.4/css/brandingbar.min.css.gz" />
+    <link rel="stylesheet" type="text/css" href="//d3d1m61yehgiwz.cloudfront.net/sf-icons/0.2/css/sf-icons.min.css.gz" />
     <meta name="keywords" content="Public, Policy, Open, Data, Actionable, Guide, Crafting, Enacting, Government, What, Works, Cities, Bloomberg, Sunlight, Foundation, Transparency, Accountability, Resources" />
     <meta name="description" content="Public Policy For Public Data - An Actionable Guide to Crafting and Enacting Open Data Policy by the Sunlight Foundation via What Works Cities" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- favicons -->
     <link rel="shortcut icon" href="/favicon.ico" />
     <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png" /> -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192" />
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
-    <link rel="manifest" href="/manifest.json" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="apple-touch-icon" sizes="57x57" href="http://sunlightlabs.s3.amazonaws.com/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="http://sunlightlabs.s3.amazonaws.com/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="http://sunlightlabs.s3.amazonaws.com/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="http://sunlightlabs.s3.amazonaws.com/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="http://sunlightlabs.s3.amazonaws.com/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="http://sunlightlabs.s3.amazonaws.com/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="http://sunlightlabs.s3.amazonaws.com/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="http://sunlightlabs.s3.amazonaws.com/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="http://sunlightlabs.s3.amazonaws.com/apple-touch-icon-180x180.png" />
+    <link rel="icon" type="image/png" href="http://sunlightlabs.s3.amazonaws.com/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="http://sunlightlabs.s3.amazonaws.com/android-chrome-192x192.png" sizes="192x192" />
+    <link rel="icon" type="image/png" href="http://sunlightlabs.s3.amazonaws.com/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="http://sunlightlabs.s3.amazonaws.com/favicon-16x16.png" sizes="16x16" />
+    <link rel="manifest" href="http://sunlightlabs.s3.amazonaws.com/manifest.json" />
+    <link rel="mask-icon" href="http://sunlightlabs.s3.amazonaws.com/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="apple-mobile-web-app-title" content="sunlight-foundation-favicon-app-name-for-android-chrome-manifest" />
     <meta name="application-name" content="sunlight-foundation-favicon-app-name-for-android-chrome-manifest" />
     <meta name="msapplication-TileColor" content="#00aba9" />
     <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
-    <link rel="stylesheet" type="text/css" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css" />
-    <link rel="stylesheet" type="text/css" href="css/wwc-stylee.css" />
-    <link rel="stylesheet" type="text/css" href="//d3d1m61yehgiwz.cloudfront.net/brandingbar/0.4/css/brandingbar.min.css.gz" />
-    <link rel="stylesheet" type="text/css" href="//d3d1m61yehgiwz.cloudfront.net/sf-icons/0.2/css/sf-icons.min.css.gz" />
+    <!-- open graph tags -->
+    <meta property="og:site_name" content="Sunlight Foundation" />
+    <meta property="og:title" content="Sunlight Foundation" />
+    <meta property="og:description" content="Making government transparent and accountable." />
+    <meta property="og:type" content="non_profit" />
+    <meta property="og:url" content="http://sunlightfoundation.com/" />
+    <meta property="og:email" content="contact@sunlightfoundation.com" />
+    <meta property="og:phone_number" content="202-742-1520" />
+    <meta property="og:image" content="https://s3.amazonaws.com/assets.sunlightfoundation.com/external/facebook/sflogox180-2012.jpg" />
+    <meta property="fb:page_id" content="6921874941" />
+    <meta property="og:locale" content="en_US" />
+    <!-- correct?    <meta property="fb:admins" content="7812952" /> -->
+    <meta name="description" content="">
     <link rel="author" href="humans.txt" />
   </head>
   <body>
@@ -51,7 +67,7 @@
   	        <li><a href="#section-h2-07">Enact and Implement</a></li>
             <li><a href="#section-h2-08">Promote</a></li>
             <li><a href="#section-h2-09">Policies at Work</a></li>
-  	        <li><a href="#section-h2-12">About</a></li>
+  	        <li><a class="nav-style" href="#section-h2-12">About</a></li>
   	      </ul>
   	    </nav>
       </aside>
