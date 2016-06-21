@@ -28,6 +28,18 @@ src:url("fonts/futura-md-bt-medium/bitstream_-_futura_md_bt_medium-webfont.eot?#
 font-weight:normal;
 font-style:normal;
 }
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('fonts/open-sans/opensans-light-webfont.eot');
+    src: url('fonts/open-sans/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/open-sans/opensans-light-webfont.woff2') format('woff2'),
+         url('fonts/open-sans/opensans-light-webfont.woff') format('woff'),
+         url('fonts/open-sans/opensans-light-webfont.ttf') format('truetype'),
+         url('fonts/open-sans/opensans-light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 *{margin:0; padding:0; border:none;}
 aside,footer,header,main,nav,section{display:block}
@@ -76,6 +88,7 @@ p a:hover,p a:active,p a:focus{color:#df5530;}
 	height:2px;
 	background-color:#df5530;
 	content:"";
+		line-height:1.6em;
 }
 
 b,strong{font-weight: bold;}
@@ -121,12 +134,14 @@ h3{
 	position:relative;
 }
 p{
-	font-family:"futura_md_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	/** font-family:"futura_md_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; **/
+	    font-family: 'open_sanslight', Helvetica, Arial, sans-serif;
 	/** font-size:1.4em; **/
 	font-size:18px;
 	font-weight:300;
 	padding-top:.5em;
 	margin-bottom:.5em;
+	line-height:1.6em;
 }
 ul{
 	list-style-type:none;
@@ -158,8 +173,11 @@ footer{
 section{
 	max-width:800px;
 	border-bottom:4px solid #fff;
+	clear:left;
+	float:none;
 }
 section.embedded-section{max-width:100%; background-color: #ffcb06;}
+.embedded-content{max-width:800px; margin-left:190px;}
 
 section#section-11,section#section-06,section#section-12,section#section-10{
 	border-bottom:none;
@@ -345,8 +363,6 @@ footer li a{
 .embedded-content{
 	position:relative;
 	background-color:#ffcb06;
-	margin-left:auto;
-	margin-right:auto;
 	padding-top:3.5em;
 	padding-bottom:3.5em;
 	width:100%;
@@ -361,7 +377,7 @@ footer li a{
 	position:absolute; 
 	content:""; 
 	z-index:100;
-	left:250px;
+	left:110px;
 	width:0px; 
 	height:0px; 
 	border-left:30px solid transparent;
@@ -379,7 +395,8 @@ footer li a{
 }
 li.li-ec{margin-top:60px;}
 .embedded-content-list{
-	margin-left:250px;
+	width:50%;
+	float:left;
 	text-align:left;
 }
 .embedded-content-list li{
