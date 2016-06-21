@@ -76,7 +76,7 @@ a:active,a:hover{outline:0}
 p a:hover,p a:active,p a:focus{color:#df5530;}
 
 .maincontent p a{position:relative; text-decoration:none;}
-.maincontent p a:before{
+/** .maincontent p a:before{
 	z-index:10000;
 	position:absolute;
 	bottom:0;
@@ -85,8 +85,8 @@ p a:hover,p a:active,p a:focus{color:#df5530;}
 	height:2px;
 	background-color:#df5530;
 	content:"";
-		line-height:1.6em;
-}
+	line-height:1.6em;
+} **/
 #sftweets p.tweet a:before{height:0;}
 b,strong{font-weight: bold;}
 h1{font-size:4em;}
@@ -415,6 +415,7 @@ li.li-ec{margin-top:60px;}
 	font-family:"futura_md_btbold", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	line-height:1.2;
 	display:block;
+	font-size:18px;
 }
 
 .embedded-content-list a:hover,.embedded-content-list a:visited{
@@ -692,7 +693,9 @@ div.blogposts-box h2{margin-top:0;}
     .embedded-content:before{left:100px;}
     .embedded-content-list{margin-left:100px; width:30%;}
     .embedded-content-gutter{margin-left:100px;}
-    .li-no-header p,.li-no-header h3{padding-left:0;}
+    .li-no-header p{padding-left:0;}
+    .li-no-header h3 {
+    padding-left: 100px;}
     #section-11 h2{
     	padding-left:0; 
     	font-size:2em;
@@ -725,7 +728,9 @@ div.blogposts-box h2{margin-top:0;}
 	.blogposts-box h2{text-indent:10px;}
 }
 @media screen and (max-width:768px) {
-	    .embedded-content-list{width:100%;}
+	#wwc-blogposts-all{left:260px;}
+	.content-list.content-list-footer p{margin-left:0}
+	.embedded-content-list{width:100%;}
 	h2{line-height:1.1; padding-top:1px;}
     #wwc-logo-wwc{background-image:url("../img/what-works-cities-logotype-320x83.png");}
 	#section-11 h2{font-size:1em;}
@@ -959,8 +964,8 @@ div.blogposts-box h2{margin-top:0;}
 	.testclass{background-color:#fff !important;}
 	/** .ref-list{padding-right:10px;} **/
 	.embedded-content{
-		padding-left:10%; 
-		padding-right:10%;
+		padding-left:90px; 
+		padding-right:10px;
 	}
 	.embedded-content-list a.ref{font-weight:300;}
 	.embedded-content-gutter{margin-left:0;}
@@ -971,7 +976,7 @@ div.blogposts-box h2{margin-top:0;}
 	h2{line-height:normal;}
 	h2 a{line-height:1.5;}
 	.content-list p{margin-right:10px}
-	.embedded-content-list .ref{font-size:10px;}
+	.embedded-content-list .ref{font-size:16px;}
 	.blogposts-box h2 a{line-height:80px;}
 	li.li-ec{margin-top:0}
 }
