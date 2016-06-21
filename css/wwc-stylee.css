@@ -256,9 +256,8 @@ h2 a{
 .wwc-logo-headliner{
 	height:116px;
 	max-width:700px;
-	margin-left:auto;
-	margin-right:auto;
-	background:url("../img/logo-split.png") 455px 0 no-repeat;
+	background:url("../img/logo-split.png") 570px 0 no-repeat;
+	padding-left:110px;
 }
 .wwc-logo{
 	display:block;
