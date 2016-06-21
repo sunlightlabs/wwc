@@ -181,12 +181,14 @@ section.embedded-section{max-width:100%; background-color: #ffcb06; padding-bott
 section#section-11,section#section-06,section#section-12,section#section-10{
 	border-bottom:none;
 }
-#section-02 h2,#section-08 h2{background-image:url("../img/icons/icon-04a.png");}
-#section-03 h2,#section-09 h2{background-image:url("../img/icons/icon-05a.png");}
-#section-04 h2{background-image:url("../img/icons/icon-03a.png");}
+#section-02 h2{background-image:url("../img/icons/why-policy.png");}
+#section-03 h2{background-image:url("../img/icons/where-to-begin.png");}
+#section-04 h2{background-image:url("../img/icons/icon-05a.png");}
 #section-05 h2{background-image:url("../img/icons/icon-02a.png");}
-#section-06 h2{background-image:url("../img/icons/icon-00a.png");}
-#section-07 h2{background-image:url("../img/icons/icon-06a.png");}
+#section-06 h2{background-image:url("../img/icons/icon-03a.png");}
+#section-07 h2{background-image:url("../img/icons/icon-00a.png");}
+#section-08 h2{background-image:url("../img/icons/icon-06a.png");}
+#section-09 h2{background-image:url("../img/policies-at-work.png");}
 #section-10{
 	padding-left:2em;
 	padding-right:2em;
@@ -304,7 +306,7 @@ footer li a{
 	color:#df5530; 
 	border:4px solid #df5530; 
 	line-height:2.5;
-	width:40%;
+	width:400px;
 	text-transform:uppercase;
 	text-decoration:none;
 }
@@ -334,6 +336,8 @@ footer li a{
 .content-list p{
 	margin-left:190px; 
 }
+.content-list.content-list-footer h3{padding-top:15px;}
+.content-list.content-list-footer p{margin-left:110px;}
 .li-header{
 	padding-top:30px;
 	padding-left:190px;
@@ -408,6 +412,7 @@ li.li-ec{margin-top:60px;}
 	line-height:1.2;
 	display:block;
 }
+
 .embedded-content-list a:hover,.embedded-content-list a:visited{
 	color:#511f11;
 }
@@ -445,6 +450,7 @@ footer em{
 }
 footer{
 	padding-bottom:10em;
+	max-width:800px;
 }
 footer li{
 	margin-top:1em; 
@@ -458,7 +464,7 @@ footer li{
 #wwc-blogposts-all{
 	margin-top:-68px; 
 	margin-right:15px; 
-	font-size:30px; 
+	font-size:px; 
 	float:right; 
 	display:block; 
 	border:3px solid #df5530; 
@@ -528,7 +534,6 @@ p.tweet{
 	margin:0;
 	clear:left; 
 	float:none;
-	font-size:1.5em;
 }
 p.timePosted{
 	margin:1.5em 0 0 0;
@@ -593,12 +598,15 @@ h3.wwc-blog-post-title{
 	float:left; 
 	width:32%;
 	height:100%;
-	font-size:1.25em; 
 	padding-left:0;
 	margin-right:1%;
 	margin-bottom:0;
-	font-weight:300;
-	font-family:"futura_md_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration:none;
+	font-weight:700;
+	font-family:"futura_md_btbold", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height:1.2;
+	display:block;
+	font-size:18px;
 }
 .wwc-blog-post-title a{
 	color:#25305d; 
