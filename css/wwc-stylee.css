@@ -159,6 +159,8 @@ section{
 	max-width:800px;
 	border-bottom:4px solid #fff;
 }
+section.embedded-section{max-width:100%; background-color: #ffcb06;}
+
 section#section-11,section#section-06,section#section-12,section#section-10{
 	border-bottom:none;
 }
