@@ -90,7 +90,7 @@ p a:hover,p a:active,p a:focus{color:#df5530;}
 	content:"";
 		line-height:1.6em;
 }
-
+#sftweets p.tweet a:before{height:0;}
 b,strong{font-weight: bold;}
 h1{font-size:4em}
 small{font-size:80%}
@@ -490,7 +490,7 @@ footer li{
 	float:none;
 	/** twitter bg is not transparent....going to need to fix this!!! **/
 	/** background-color:#25305d; **/
-	background:#25305d url("../img/bg-stripe.png") 0 0 repeat;
+		background:url("../img/bg-tile.jpg") 0 0 repeat;
 	text-align:center;
 }
 #wrapper{
@@ -708,22 +708,15 @@ div.blogposts-box h2{margin-top:0;}
     #wrapper{height:270px;}
 
 }
-@media screen and (max-width: 650px) {
-    #wwc-blogposts-all{font-size:16px;}
-    #rss-feed-viewer{min-height:250px;}
-    #wrapper{height:280px;}
+@media screen and (max-width:768px) {
     #wwc-logo-wwc{background-image:url("../img/what-works-cities-logotype-320x83.png");}
-}
-@media screen and (max-width: 600px) {
 	#section-11 h2{font-size:1em;}
     #wwc-blogposts-all{font-size:14px;}
     h3.wwc-blog-post-title{font-size:1em;}
     #rss-feed-viewer{min-height:200px;}
-    #wrapper{height:310px;}
-    #wwc-logo-wwc{background-image:url("../img/what-works-cities-logotype-320x83.png");}
+    #wrapper{height:250px;}
     .wwc-blogposts-read-more span:before{background-position:0 0;}
-}
-@media screen and (max-width: 550px) {
+
 	section{
 		padding-left:0; 
 		margin-left:0; 
@@ -859,7 +852,7 @@ div.blogposts-box h2{margin-top:0;}
 		margin-right:0;
 	}
 	.content-list p + p{padding-top:1em;}
-	.content-list li.gutter{padding-left:6em;}
+	.content-list li.gutter{padding-left:120px;}
 	li.li-header{padding-top:10px;}
 	.li-header:before{
 		top:15px; 
