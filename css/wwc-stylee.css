@@ -28,18 +28,14 @@ src:url("fonts/futura-md-bt-medium/bitstream_-_futura_md_bt_medium-webfont.eot?#
 font-weight:normal;
 font-style:normal;
 }
-@font-face {
-    font-family: 'open_sanslight';
-    src: url('fonts/open-sans/opensans-light-webfont.eot');
-    src: url('fonts/open-sans/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/open-sans/opensans-light-webfont.woff2') format('woff2'),
-         url('fonts/open-sans/opensans-light-webfont.woff') format('woff'),
-         url('fonts/open-sans/opensans-light-webfont.ttf') format('truetype'),
-         url('fonts/open-sans/opensans-light-webfont.svg#open_sanslight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
+@font-face{font-family: 'open_sanslight';
+  src:url('fonts/open-sans/opensans-light-webfont.eot');
+  src:url('fonts/open-sans/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/open-sans/opensans-light-webfont.woff2') format('woff2'),
+    url('fonts/open-sans/opensans-light-webfont.woff') format('woff'),
+    url('fonts/open-sans/opensans-light-webfont.ttf') format('truetype'),
+    url('fonts/open-sans/opensans-light-webfont.svg#open_sanslight') format('svg');
+font-weight: normal; font-style: normal}
 
 *{margin:0; padding:0; border:none;}
 aside,footer,header,main,nav,section{display:block}
@@ -54,6 +50,7 @@ html {
 body{
 	font-family:"futura_md_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color:#fff;
+	overflow-x: hidden;
 }
 body:before{
 	content:""; 
@@ -92,7 +89,7 @@ p a:hover,p a:active,p a:focus{color:#df5530;}
 }
 #sftweets p.tweet a:before{height:0;}
 b,strong{font-weight: bold;}
-h1{font-size:4em}
+h1{font-size:4em;}
 small{font-size:80%}
 img{border:0}
 svg:not(:root){overflow: hidden}
@@ -105,6 +102,7 @@ h1{
 	font-weight:500;
 	font-family:"futura_mdcn_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+h1#h1-main{padding:0 25px;}
 /**
 h2,h3,h4,h5,h6{font-family:"futura_mdcn_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;}
 **/
@@ -124,6 +122,8 @@ h2{
 .h2-icon{
 	display:block;
 	padding-left:110px;
+	line-height:1.3;
+	padding-top:21px;
 }
 h3{
 	font-family:"futura_md_btmedium", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -153,8 +153,9 @@ a{
 }
 nav,nav ul{z-index:100000; position:relative;}
 aside{
+
 	position:fixed;
-	width:250px;
+	max-width:250px;
 /**	padding-top:-45px; **/
 	height:100%; 
 	background-color:#25305d;
@@ -253,6 +254,9 @@ h2 a{
 	text-decoration:none; 
 	outline:none;
 }
+#p-main{
+		padding:.5em 25px 0 25px;
+	}
 .wwc-logo-headliner{
 	height:116px;
 	max-width:700px;
@@ -348,6 +352,7 @@ footer li a{
 .li-header h3{
 	/** height:58px; **/ /** 8px accounts for border 4px *2 **/
 	margin-bottom:0;
+	margin-top:15px;
 }
 .li-header:before{
 	position:absolute;
@@ -667,6 +672,7 @@ h1.map-pin-h1{
 	color:#df5530; 
 	font-size:1.5em;
 }
+.blogposts-box{position:relative;}
 div.blogposts-box h2{margin-top:0;}
 
 /**  media queries **/
@@ -677,13 +683,14 @@ div.blogposts-box h2{margin-top:0;}
 @media screen and (max-width: 900px) {
 	.h2-icon{padding-left:100px;}
 	.li-header{padding-left:100px;}
-	.li-header:before{left:5%;}
+	.li-header:before{left:30px;}
 	.content-list p{
     	margin-left:100px;
     	margin-right:50px;
     }
+    .embedded-content{padding-left:0;}
     .embedded-content:before{left:100px;}
-    .embedded-content-list{margin-left:100px;}
+    .embedded-content-list{margin-left:100px; width:30%;}
     .embedded-content-gutter{margin-left:100px;}
     .li-no-header p,.li-no-header h3{padding-left:0;}
     #section-11 h2{
@@ -706,24 +713,26 @@ div.blogposts-box h2{margin-top:0;}
     #section-11 h2{font-size:1.5em;}
     #rss-feed-viewer{min-height:200px;}
     #wrapper{height:240px;}
-
-}
-@media screen and (max-width: 700px) {
-    #section-11 h2{font-size:1.25em;}
-    #wwc-blogposts-all{font-size:20px;}
-    #rss-feed-viewer{min-height:230px;}
-    #wrapper{height:270px;}
-
+    #wwc-blogposts-all{
+		float:none;
+		clear:left;
+		position:absolute; 
+		bottom:10px;
+		left:170px;
+		font-size:1em;
+	}
+	#wwc-blogposts-all:before{background-image:url("../img/arrow-right-bg-white.png");}
+	.blogposts-box h2{text-indent:10px;}
 }
 @media screen and (max-width:768px) {
+	    .embedded-content-list{width:100%;}
+	h2{line-height:1.1; padding-top:1px;}
     #wwc-logo-wwc{background-image:url("../img/what-works-cities-logotype-320x83.png");}
 	#section-11 h2{font-size:1em;}
-    #wwc-blogposts-all{font-size:14px;}
     h3.wwc-blog-post-title{font-size:1em;}
     #rss-feed-viewer{min-height:200px;}
     #wrapper{height:250px;}
     .wwc-blogposts-read-more span:before{background-position:0 0;}
-
 	section{
 		padding-left:0; 
 		margin-left:0; 
@@ -731,8 +740,8 @@ div.blogposts-box h2{margin-top:0;}
 		background-position:20px 0;
 	}
 	aside{
-		position:relative; 
-		width:100%;
+		position:fixed; 
+		width:100%; max-width:100%; z-index:300000;
 		height:80px;
 	}
 	aside a{text-align:center;}
@@ -742,9 +751,7 @@ div.blogposts-box h2{margin-top:0;}
 		overflow:hidden; 
 		display:none;
 	} /** hide branding bar **/  
-    h1{
-    	position:relative;
-    } /** to get point down from top...this is not ideal...do not push to production **/
+    h1{position:relative;} /** to get point down from top...this is not ideal...do not push to production **/
     #logo{
     	height:90px;
     	z-index:100; 
@@ -847,9 +854,9 @@ div.blogposts-box h2{margin-top:0;}
 		margin:2em auto 4em auto;
 	}
 	h2{
-		background-position:10%;
+		background-position:15px 0;
 		font-size:1.35em;
-		padding-left:30%;
+		padding-left:90px;
 	}
 	.h2-icon{padding-left:0;}
 	.content-list{position:relative;}
@@ -859,11 +866,11 @@ div.blogposts-box h2{margin-top:0;}
 		margin-right:0;
 	}
 	.content-list p + p{padding-top:1em;}
-	.content-list li.gutter{padding-left:120px;}
+	.content-list li.gutter{padding-left:90px;}
 	li.li-header{padding-top:10px;}
 	.li-header:before{
 		top:15px; 
-		left:12.5%; 
+		left:29px; 
 		height:25px; 
 		width:25px;
 	}
@@ -890,14 +897,6 @@ div.blogposts-box h2{margin-top:0;}
 		background-color:#fff;
 	}
 	.blogposts-box{padding-bottom:5em;}
-	#wwc-blogposts-all{
-		float:none;
-		clear:left;
-		position:absolute; 
-		bottom:10px;
-		left:30%;
-		font-size:1em;
-	}
 	#wwc-blogposts-all:before{background-image:url("../img/arrow-right-bg-white.png");}
 	.section-box-feeds{min-height:200px;}
 	.section-box-feeds h3{
@@ -976,3 +975,11 @@ div.blogposts-box h2{margin-top:0;}
 	.blogposts-box h2 a{line-height:80px;}
 	li.li-ec{margin-top:0}
 }
+/**
+@media screen and (max-width: 700px) {
+    #section-11 h2{font-size:1.25em;}
+    #wwc-blogposts-all{font-size:20px;}
+    #rss-feed-viewer{min-height:230px;}
+    #wrapper{height:270px;}
+
+} **/
