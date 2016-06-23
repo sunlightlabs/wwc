@@ -40,9 +40,7 @@ font-style:normal;
 }
 *{margin:0; padding:0; border:none;}
 aside,footer,header,main,nav,section{display:block}
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-/** 1. Set default font family to sans-serif. 2. Prevent iOS and IE text size adjust after device orientation change, without disabling user zoom. **/
-/** palette - dark red for visited/hover (should be more than one color!!!)  #511f11 **/
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */ /** 1. Set default font family to sans-serif. 2. Prevent iOS and IE text size adjust after device orientation change, without disabling user zoom. **/
 html {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
@@ -432,7 +430,6 @@ li.li-ec{margin-top:60px;}
 	display:block;
 	font-size:18px;
 }
-
 .embedded-content-list a:hover,.embedded-content-list a:visited{
 	color:#511f11;
 }
@@ -655,12 +652,12 @@ h3.wwc-blog-post-title{
 .leaflet-popup-content-wrapper{
 	border-radius:0;
 }
-.leaflet-popup-content-wrapper,.leaflet-popup-tip{
-	background:#ffd44f;
-	opacity:.85;
+.leaflet-popup .leaflet-popup-content-wrapper,.leaflet-popup .leaflet-popup-tip{
+	background:transparent url("../img/bg-leaflet-map-popup-transparent-95.png") 0 0 repeat;
 }
 h1.map-pin-h1,.leaflet-container a.leaflet-popup-close-button,.leaflet-map-date{
 	font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-family:700;
 }
 h1.map-pin-h1{
 	font-size:2em;
@@ -674,12 +671,45 @@ h1.map-pin-h1{
 .leaflet-popup-content{
 	padding:1em;
 }
-.leaflet-container a.leaflet-popup-close-button{
+/** .leaflet-popup-pane .leaflet-popup .leaflet-popup-content-wrapper .leaflet-popup-content{width:auto !important;} **/ /** doesn't expand width, actually shrinks it **/
+.leaflet-popup-pane .leaflet-popup .leaflet-popup-content-wrapper .leaflet-popup-content{
+	min-width:330px;
+}
+.leaflet-container .leaflet-popup a.leaflet-popup-close-button{
+	padding:0;
+	top:4px;
+	right:4px;
+	width:20px;
+	height:20px;
+	line-height:20px;
+}
+.leaflet-container .leaflet-popup a.leaflet-popup-close-button{
 	color:#df5530;
 }
-.leaflet-container a{
+.leaflet-container .leaflet-popup a.leaflet-popup-close-button:hover{
+	color:#fff;
+	outline:1px solid #fff;
+}
+.xoxo.map-pin-list li{
+	padding-top:5px; 
+	padding-bottom:5px;
+}
+.leaflet-container .xoxo.map-pin-list a{
 	color:#df5530; 
 	font-size:1.5em;
+	text-decoration:none;
+	font-family:"futura_md_btbold", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height:1.5;
+}
+.leaflet-container .xoxo.map-pin-list .ref-map-link{
+	margin-top:-2px; 
+	vertical-align:middle;
+}
+.leaflet-container .xoxo.map-pin-list a:hover,.leaflet-container .xoxo.map-pin-list a:visited{
+	color:#511f11;
+}
+.leaflet-popup .leaflet-popup-content-wrapper{
+	border-radius:0;
 }
 .blogposts-box{
 	position:relative;
@@ -726,8 +756,8 @@ div.blogposts-box h2{
     	padding-left:0;
     }
     .li-no-header h3 {
-    padding-left: 100px;
-}
+    	padding-left: 100px;
+    }
     #section-11 h2{
     	padding-left:0; 
     	font-size:2em;
@@ -743,13 +773,23 @@ div.blogposts-box h2{
     	width:100%; 
     	background-position:50% 0;
     }
-    #wwc-logo-sf{margin-left:auto;}
-    footer{padding-bottom:1em}
+    #wwc-logo-sf{
+    	margin-left:auto;
+    }
+    footer{
+    	padding-bottom:1em;
+    }
 }
 @media screen and (max-width: 800px) {
-    #section-11 h2{font-size:1.5em;}
-    #rss-feed-viewer{min-height:200px;}
-    #wrapper{height:240px;}
+    #section-11 h2{
+    	font-size:1.5em;
+    }
+    #rss-feed-viewer{
+    	min-height:200px;
+    }
+    #wrapper{
+    	height:240px;
+    }
     #wwc-blogposts-all{
 		float:none;
 		clear:left;
@@ -758,20 +798,45 @@ div.blogposts-box h2{
 		left:170px;
 		font-size:1em;
 	}
-	#wwc-blogposts-all:before{background-image:url("../img/arrow-right-bg-white.png");}
-	.blogposts-box h2{text-indent:10px;}
+	#wwc-blogposts-all:before{
+		background-image:url("../img/arrow-right-bg-white.png");
+	}
+	.blogposts-box h2{
+		text-indent:10px;
+	}
 }
 @media screen and (max-width:768px) {
-	#wwc-blogposts-all{left:260px;}
-	.content-list.content-list-footer p{margin-left:0}
-	.embedded-content-list{width:100%;}
-	h2{line-height:1.1; padding-top:1px;}
-    #wwc-logo-wwc{background-image:url("../img/what-works-cities-logotype-320x83.png");}
-	#section-11 h2{font-size:1em;}
-    h3.wwc-blog-post-title{font-size:1em;}
-    #rss-feed-viewer{min-height:200px;}
-    #wrapper{height:250px;}
-    .wwc-blogposts-read-more span:before{background-position:0 0;}
+	#wwc-blogposts-all{
+		left:260px;
+	}
+	.content-list.content-list-footer p{
+		margin-left:0;
+	}
+	.embedded-content-list{
+		width:100%;
+	}
+	h2{
+		line-height:1.1; 
+		padding-top:1px;
+	}
+    #wwc-logo-wwc{
+    	background-image:url("../img/what-works-cities-logotype-320x83.png");
+    }
+	#section-11 h2{
+		font-size:1em;
+	}
+    h3.wwc-blog-post-title{
+    	font-size:1em;
+    }
+    #rss-feed-viewer{
+    	min-height:200px;
+    }
+    #wrapper{
+    	height:250px;
+    }
+    .wwc-blogposts-read-more span:before{
+    	background-position:0 0;
+    }
 	section{
 		padding-left:0; 
 		margin-left:0; 
@@ -780,17 +845,25 @@ div.blogposts-box h2{
 	}
 	aside{
 		position:fixed; 
-		width:100%; max-width:100%; z-index:300000;
+		width:100%; 
+		max-width:100%; 
+		z-index:300000;
 		height:80px;
 	}
-	aside a{text-align:center;}
-	h1{margin:0;}
+	aside a{
+		text-align:center;
+	}
+	h1{
+		margin:0;
+	}
 	header,.branding-bar{
 		max-height:45px; 
 		overflow:hidden; 
 		display:none;
 	} /** hide branding bar **/  
-    h1{position:relative;} /** to get point down from top...this is not ideal...do not push to production **/
+    h1{
+    	position:relative;
+    } /** to get point down from top...this is not ideal...do not push to production **/
     #logo{
     	height:90px;
     	z-index:100; 
@@ -803,7 +876,9 @@ div.blogposts-box h2{
     	background-image:url("../img/sunlight-foundation-wwc-logo-80x90.png");
     	z-index:100;  /** so you can click through **/
     }
-    #logo:hover{background-image:url("../img/sunlight-foundation-wwc-logo-red-80x90.png");}
+    #logo:hover{
+    	background-image:url("../img/sunlight-foundation-wwc-logo-red-80x90.png");
+    }
     nav{
     	height:200px; /** rough estimate of screen height. **/
     	width:100%;
@@ -832,7 +907,9 @@ div.blogposts-box h2{
 		z-index:200; /** so you can click through **/
 		background:url("../img/hamburglar-nav-white-048.png") 0 0 no-repeat;
     }
-    nav.expanded button{background:url("../img/bg-nav-rwd.png") 0 0 repeat;}
+    nav.expanded button{
+    	background:url("../img/bg-nav-rwd.png") 0 0 repeat;
+    }
     nav button:focus{
     	outline:none; /** default webkit outline:-webkit-focus-ring-color auto 5px **/
     }
@@ -856,8 +933,12 @@ div.blogposts-box h2{
 		display:block;
 		width:100%;
 	}
-	nav.expanded a{text-align:left;}
-	.nav a:before{border:none;}
+	nav.expanded a{
+		text-align:left;
+	}
+	.nav a:before{
+		border:none;
+	}
 	nav.expanded #mobiletoggle{
 		display:block;
 		cursor:pointer;
@@ -1060,11 +1141,3 @@ div.blogposts-box h2{
 		margin-top:0;
 	}
 }
-/**
-@media screen and (max-width: 700px) {
-    #section-11 h2{font-size:1.25em;}
-    #wwc-blogposts-all{font-size:20px;}
-    #rss-feed-viewer{min-height:230px;}
-    #wrapper{height:270px;}
-
-} **/

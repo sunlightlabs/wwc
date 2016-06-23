@@ -31,31 +31,12 @@
           var icon = locations[i]['properties']['WWC'] == 'True' ? wwcIcon : odpIcon;
           // get coordinates of location.
           var coords = locations[i]['geometry']['coordinates'];
-          
-// {"type":"Feature","properties":{
-//		"County":"Montgomery County",
-//		"Date":"12/04/2012",
-//		"Legal Means":"Legislation",
-//		"Policy URL":"http://www6.montgomerycountymd.gov/content/council/pdf/agenda/cm/2012/121126/20121126_GO2.pdf",
-//		"WWC":"False"}
-// // county
-// {"type":"Feature","properties":{"County":"Howard County","Date":"7/7/2014","Legal Means":"Legislation","Policy URL":"https://apps.howardcountymd.gov/olis/LegislationDetail.aspx?LegislationID=839","WWC":"False"}
-// city
-// {"type":"Feature","properties":{"City":"Oakland, CA","Date":"10/15/2013","Legal Means":"Legislation","Policy URL":"http://www.scribd.com/doc/171673962/Resolution-Establishing-An-Open-Data-Policy-For-The-City-Of-Oakland-For-Making-Public-Data-Available-In-Machine-Readable-Formats-Using-Open-Data-Stand","WWC":"False"},"geometry":{"type":"Point","coordinates":[-122.2723388671875,37.814123701604466]}}
-
-// using county here...pretty sure city is needed also...use both or go with "locality"? something else?
-// datetime=\"" . locations[i]['properties']['Date'] + "\"
-// var v01 = "<h1>" + locations[i]['properties']['Date'] + "<b style='font-size:65px; display:block'>v01</b>" + locations[i]['properties']['Policy URL'] + "</h1>";
           var mapPinDate = "<time class=\"leaflet-map-date\" datatime=\"" + locations[i]['properties']['Date'] + "\">" + locations[i]['properties']['Date'] + "</time>"; 
-          var mapPinLinkPolicyURL = "<a href=\"" + locations[i]['properties']['Policy URL'] + "\">" + locations[i]['properties']['Legal Means'] + "</a>";
+          var mapPinLinkPolicyURL = "<a class=\"ref-map\" target=\"_blank\" href=\"" + locations[i]['properties']['Policy URL'] + "\">" + locations[i]['properties']['Legal Means'] + " <img class=\"ref-map-link\" src=\"../img/arrow-right-redx020.png\" alt=\"Go to WWC Reference Document\" /></a>";
           var mapPinH1 = "<h1 class=\"map-pin-h1\">" + locations[i]['properties']['City'] + "</h1>";
           
-          // ask andy
-          // var mapPinList = "<ul class\"xoxo map-pin-list\">";
-          // mapPinList += "<li>Link One</li>";
-          // mapPinList += "</ul>";
-          
-          var mapPinList01 = "<ul class\"xoxo map-pin-list\">";
+          // var mapPinList01 = "<ul class\"xoxo map-pin-list\">";
+          var mapPinList01 = "<ul class=\"xoxo map-pin-list\">";
           var mapPinList02 = "<li>" + mapPinH1 + "</li>";
           var mapPinList03 = "<li>" + mapPinDate + "</li>";
           var mapPinList04 = "<li>" + mapPinLinkPolicyURL + "</li>";
@@ -64,7 +45,6 @@
           var mapPinListContent = mapPinList01 + mapPinList02 + mapPinList03 + mapPinList04 + mapPinListClose;
           var mapPinContent = "<div class=\"map-pin-content\">" + mapPinListContent + "</div>";
           
-
           // create marker at specified coordinates (swapped to convert lat/lng to x/y) and add popup on click.
           // var marker = L.marker([coords[1], coords[0]], {icon: icon}).bindPopup('<a href="' + locations[i]['properties']['Policy URL'] + '">Policy Link</a>').addTo(map);
           var marker = L.marker([coords[1], coords[0]], {icon: icon}).bindPopup(mapPinContent).addTo(map);
