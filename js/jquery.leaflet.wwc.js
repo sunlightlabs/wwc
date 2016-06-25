@@ -33,7 +33,7 @@
           var coords = locations[i]['geometry']['coordinates'];
           var mapPinDate = "<time class=\"leaflet-map-date\" datatime=\"" + locations[i]['properties']['Date'] + "\">" + locations[i]['properties']['Date'] + "</time>"; 
           var mapPinLinkPolicyURL = "<a class=\"ref-map\" target=\"_blank\" href=\"" + locations[i]['properties']['Policy URL'] + "\">" + locations[i]['properties']['Legal Means'] + " <img class=\"ref-map-link\" src=\"../img/arrow-right-redx020.png\" alt=\"Go to WWC Reference Document\" /></a>";
-          var mapPinH1 = "<h1 class=\"map-pin-h1\">" + locations[i]['properties']['City'] + "</h1>";
+          var mapPinH1 = "<h1 class=\"map-pin-h1\">" + locations[i]['properties']['City'] + ", " + locations[i]['properties']['State'] + "</h1>";
           
           // var mapPinList01 = "<ul class\"xoxo map-pin-list\">";
           var mapPinList01 = "<ul class=\"xoxo map-pin-list\">";
